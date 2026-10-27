@@ -7,15 +7,19 @@ source tree to the path:
 addpath(genpath(fullfile(pwd,'matlab')));
 ```
 
-Start with the replay that compares the saved MATLAB integer model against the
-ten frozen export vectors:
+Use the workflow runner to launch related work as a set:
 
 ```matlab
-verify_current_export
+run_qcare_set('verify')
 ```
 
-It prints a `PASS` message when every class, logit, and exported memory image
-matches. The replay writes its comparison export under
+Available sets are `verify` (the frozen export comparison), `waveform` (CSV to
+CWT/QNN input map), and `stages` (Stage 1 through Stage 4 checks). Run one set at
+a time. The runner keeps each function as a separate MATLAB file and calls the
+functions in the right order for that workflow.
+
+The verification set prints `PASS` when every class, logit, and exported memory
+image matches. It writes its comparison export under
 `experiments/ds1_current/matlab_reexport/` and leaves the saved model untouched.
 
 ## Folders

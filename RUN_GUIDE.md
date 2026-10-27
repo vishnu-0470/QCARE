@@ -48,23 +48,23 @@ Open MATLAB with `C:\QCARE_FPGA` as the current folder, then run:
 
 ```matlab
 addpath(genpath(fullfile(pwd,'matlab')));
-verify_current_export
+run_qcare_set('verify')
 ```
 
 The replay was run successfully on this Windows workstation: exact logits,
 classes, and exported ROM ordering matched for all ten frozen vectors. It
 verifies the older `ds1_current` QNN export, not the newer fusion network.
 
-To run the CWT stage checks from the MATLAB Command Window, use:
+To run all four staged checks from the MATLAB Command Window, use:
 
 ```matlab
-run(fullfile('matlab','sim','t_stage1.m'))
+run_qcare_set('stages')
 ```
 
-It prints each check as `PASS` or `FAIL` and saves the inspected beat and CWT
-map under `experiments/matlab_stage1/`. The network and quantization experiments
-are separate scripts (`t_stage2.m` and `t_stage3.m`); run them individually.
-The script list and outputs are described in [matlab/README.md](matlab/README.md).
+It prints each stage's results and saves inspection/export files under
+`experiments/`. To process the supplied waveform CSV, use
+`run_qcare_set('waveform')`. The workflow sets are described in
+[matlab/README.md](matlab/README.md).
 
 ## Reported follow-up results
 
