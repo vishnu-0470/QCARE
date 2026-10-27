@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "experiment": "memorization of 10 genuine annotated DS1 beats, two per class",
+  "synthetic_training": false,
+  "architecture_unchanged": true,
+  "seed": 26,
+  "base_model": "DS1 floating warm-start",
+  "float_diagnostic_epochs": 200,
+  "QAT_diagnostic_epochs": 400,
+  "learning_rate": 0.01,
+  "momentum": 0.8,
+  "dropout_for_memorization": 0,
+  "final_accuracy": 1.0,
+  "final_cross_entropy": 8.906482253223658e-05,
+  "history": [
+    {
+      "phase": "float",
+      "epoch": 0,
+      "loss": 0.8628031015396118,
+      "accuracy": 0.5
+    },
+    {
+      "phase": "float",
+      "epoch": 20,
+      "loss": 0.006415093783289194,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 40,
+      "loss": 0.001209983485750854,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 60,
+      "loss": 0.0007420781184919178,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 80,
+      "loss": 0.0005398189532570541,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 100,
+      "loss": 0.00042149965884163976,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 120,
+      "loss": 0.0003450381918810308,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 140,
+      "loss": 0.00029111208277754486,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 160,
+      "loss": 0.00025149245630018413,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 180,
+      "loss": 0.00022092685685493052,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "float",
+      "epoch": 199,
+      "loss": 0.00019783191964961588,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 0,
+      "loss": 0.024416062980890274,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 20,
+      "loss": 0.0054375589825212955,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 40,
+      "loss": 0.0007131103193387389,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 60,
+      "loss": 0.00046249403385445476,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 80,
+      "loss": 0.00040845765033736825,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 100,
+      "loss": 0.00038228946505114436,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 120,
+      "loss": 0.0003483524196781218,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 140,
+      "loss": 0.00017857390048447996,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 160,
+      "loss": 0.0001681198482401669,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 180,
+      "loss": 0.0001643377763684839,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 200,
+      "loss": 0.00017538790416438133,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 220,
+      "loss": 0.00011454870400484651,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 240,
+      "loss": 7.439446926582605e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 260,
+      "loss": 9.359476098325104e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 280,
+      "loss": 6.64195540593937e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 300,
+      "loss": 6.534667045343667e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 320,
+      "loss": 7.130572339519858e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 340,
+      "loss": 6.895871774759144e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 360,
+      "loss": 8.576310938224196e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 380,
+      "loss": 5.758702172897756e-05,
+      "accuracy": 1.0
+    },
+    {
+      "phase": "qat",
+      "epoch": 399,
+      "loss": 8.906482253223658e-05,
+      "accuracy": 1.0
+    }
+  ],
+  "source": [
+    {
+      "record": "101",
+      "peak": 396,
+      "label": 0
+    },
+    {
+      "record": "101",
+      "peak": 711,
+      "label": 0
+    },
+    {
+      "record": "101",
+      "peak": 135299,
+      "label": 1
+    },
+    {
+      "record": "101",
+      "peak": 215567,
+      "label": 1
+    },
+    {
+      "record": "106",
+      "peak": 32867,
+      "label": 2
+    },
+    {
+      "record": "106",
+      "peak": 33045,
+      "label": 2
+    },
+    {
+      "record": "109",
+      "peak": 6259,
+      "label": 3
+    },
+    {
+      "record": "109",
+      "peak": 11310,
+      "label": 3
+    },
+    {
+      "record": "101",
+      "peak": 114705,
+      "label": 4
+    },
+    {
+      "record": "101",
+      "peak": 308294,
+      "label": 4
+    }
+  ],
+  "seconds": 3.8423359394073486,
+  "not_full_DS1_DS2_accuracy": true,
+  "torch_model_seed": 26,
+  "seed_note": "CurrentIRN constructor resets torch RNG to 26; diagnostic dropout is zero"
+}

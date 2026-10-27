@@ -1,0 +1,25 @@
+{
+  "qnn_program_oracle": {
+    "status": "PASS",
+    "vectors": 8,
+    "all_predicted_F": true
+  },
+  "cwt_saved_matlab_map": {
+    "status": "PASS",
+    "maximum_absolute_error": 4.999607048361554e-06,
+    "tolerance": 6e-06,
+    "tolerance_reason": "archived text map has six significant digits"
+  },
+  "cadence_original_testbench": {
+    "status": "FAIL",
+    "reason": "200000-cycle timeout < 883717 engine cycles"
+  },
+  "stage2_matlab_tests": {
+    "status": "BLOCKED",
+    "reason": "MATLAB/Octave unavailable"
+  },
+  "stage3_synthetic_memorization": {
+    "status": "NOT TESTED",
+    "reason": "No MATLAB/Octave and new training restricted to real annotated ECG"
+  }
+}

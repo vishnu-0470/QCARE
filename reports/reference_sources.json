@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "reference_paper": {
+    "file": "FPGA-based Real-time ECG Classification System using Quantized Inception-ResNeXt Neural Network and CWT Approximation.pdf",
+    "sha256": "d89f454eb4c9c7988ba366946277e757b9c1beaa850c0fb34dfeda306628f8c6",
+    "pages": 12,
+    "paper_supplied_by_user": true,
+    "paper_DS1_DS2_record_lists": "not disclosed; conventional lists verified separately",
+    "Table_I_numbers": "reports/performance_summary.json; paper-reported, not rerun measurements"
+  },
+  "primary_sources": {
+    "data_and_shared_subject_notes": "https://physionet.org/content/mitdb/1.0.0/",
+    "publisher_checksums": "https://physionet.org/files/mitdb/1.0.0/SHA256SUMS.txt",
+    "conventional_DS1_DS2_lists": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3142238/",
+    "original_protocol_DOI": "https://doi.org/10.1109/TBME.2004.827359",
+    "Basys3_pins": "https://github.com/Digilent/digilent-xdc/blob/master/Basys-3-Master.xdc",
+    "board": "https://digilent.com/reference/programmable-logic/basys-3/start",
+    "Yosys": "https://yosyshq.readthedocs.io/projects/yosys/",
+    "WFDB": "https://wfdb.readthedocs.io/"
+  },
+  "paper_not_redistributed": "User-supplied reference PDF remains outside code ZIP; file identity is recorded here"
+}

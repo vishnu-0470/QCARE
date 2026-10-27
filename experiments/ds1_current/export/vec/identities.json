@@ -1,0 +1,72 @@
+[
+  {
+    "record": "100",
+    "annotation_index": 2,
+    "R_sample_0based": 370,
+    "label_0based": 0,
+    "class": "N"
+  },
+  {
+    "record": "100",
+    "annotation_index": 3,
+    "R_sample_0based": 662,
+    "label_0based": 0,
+    "class": "N"
+  },
+  {
+    "record": "100",
+    "annotation_index": 8,
+    "R_sample_0based": 2044,
+    "label_0based": 1,
+    "class": "S"
+  },
+  {
+    "record": "100",
+    "annotation_index": 231,
+    "R_sample_0based": 66792,
+    "label_0based": 1,
+    "class": "S"
+  },
+  {
+    "record": "100",
+    "annotation_index": 1907,
+    "R_sample_0based": 546792,
+    "label_0based": 2,
+    "class": "V"
+  },
+  {
+    "record": "105",
+    "annotation_index": 22,
+    "R_sample_0based": 5561,
+    "label_0based": 2,
+    "class": "V"
+  },
+  {
+    "record": "200",
+    "annotation_index": 951,
+    "R_sample_0based": 218881,
+    "label_0based": 3,
+    "class": "F"
+  },
+  {
+    "record": "200",
+    "annotation_index": 1705,
+    "R_sample_0based": 385887,
+    "label_0based": 3,
+    "class": "F"
+  },
+  {
+    "record": "105",
+    "annotation_index": 1799,
+    "R_sample_0based": 444182,
+    "label_0based": 4,
+    "class": "Q"
+  },
+  {
+    "record": "105",
+    "annotation_index": 1804,
+    "R_sample_0based": 445383,
+    "label_0based": 4,
+    "class": "Q"
+  }
+]

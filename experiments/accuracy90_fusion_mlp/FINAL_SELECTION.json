@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "selected_family": "nonlinear quantized fusion",
+  "reason": "DS1-only best eligible macro-F1 across declared head trials",
+  "DS1_validation_accuracy": 0.9136029411764706,
+  "DS1_validation_macro_f1": 0.4189883055889874,
+  "previous_DS2_results_known": true,
+  "frozen_checkpoint_sha256": "73326930266c3fdd7e3baa01c903b2ba2be54ab3abf2da2ecde63c0bb51f6688"
+}

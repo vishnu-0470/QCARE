@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "saved_prediction_metrics_match_sklearn": [
+    "accuracy90_fusion_mlp/DS2_followup",
+    "accuracy98_selected"
+  ],
+  "all_test_beats_unchanged": true,
+  "fusion_RTL": "PASS 10/10",
+  "fusion_board": "PASS 4/4",
+  "generic_synthesis": "PASS",
+  "frozen_and_baseline_checkpoints_unchanged": true,
+  "no_more_training_or_test_tuning_after_frozen_results": true,
+  "software_98_target": "FAIL",
+  "next_step": "sync requested folder and verify its launcher"
+}

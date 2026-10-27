@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "models": [
+    "ExtraTreesClassifier(max_depth=24, max_features=0.5, min_samples_leaf=3,\n                     n_estimators=160, n_jobs=2, random_state=626)",
+    "RandomForestClassifier(max_depth=24, min_samples_leaf=2, n_estimators=160,\n                       n_jobs=2, random_state=626)"
+  ],
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "DS2_used_for_fit_or_selection": false,
+  "sample_weight_exponent": 0.15,
+  "selection": "DS1 validation accuracy, ties macroF1",
+  "software_only": true,
+  "real_ECG_only": true,
+  "previous_DS2_results_known": true
+}

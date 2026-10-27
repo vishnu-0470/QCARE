@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "scope": "digital wrapper simulation only; no physical board programming",
+  "switches": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "identities": [
+    {
+      "record": "100",
+      "R_sample_0based": 370,
+      "annotation_index": 2,
+      "true_class": 0,
+      "predicted_class": 0,
+      "auxiliary_codes": [
+        1,
+        0,
+        -1,
+        0,
+        -5,
+        -13,
+        -11,
+        5,
+        -14,
+        5,
+        0,
+        -4,
+        -1,
+        -5,
+        -13,
+        -7
+      ]
+    },
+    {
+      "record": "100",
+      "R_sample_0based": 662,
+      "annotation_index": 3,
+      "true_class": 0,
+      "predicted_class": 0,
+      "auxiliary_codes": [
+        1,
+        0,
+        -1,
+        0,
+        -4,
+        -14,
+        -13,
+        5,
+        -13,
+        27,
+        -2,
+        -6,
+        2,
+        -2,
+        -5,
+        -5
+      ]
+    },
+    {
+      "record": "100",
+      "R_sample_0based": 2044,
+      "annotation_index": 8,
+      "true_class": 1,
+      "predicted_class": 0,
+      "auxiliary_codes": [
+        -4,
+        -6,
+        -8,
+        -4,
+        -4,
+        -14,
+        -15,
+        5,
+        -15,
+        24,
+        -1,
+        -6,
+        -2,
+        -5,
+        -9,
+        -5
+      ]
+    },
+    {
+      "record": "100",
+      "R_sample_0based": 66792,
+      "annotation_index": 231,
+      "true_class": 1,
+      "predicted_class": 1,
+      "auxiliary_codes": [
+        -8,
+        -11,
+        -13,
+        -8,
+        -3,
+        -14,
+        -13,
+        5,
+        -13,
+        20,
+        1,
+        -8,
+        13,
+        -3,
+        -5,
+        -5
+      ]
+    }
+  ],
+  "checks": [
+    "signed logits",
+    "one-hot class LEDs",
+    "class letter",
+    "beat index",
+    "display scan initialized"
+  ],
+  "source_directory": "experiments/accuracy90_fusion_mlp/board_export"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "seconds_per_real_DS1_batch_200_forward_backward": {
+    "1": 0.0898047685623169,
+    "2": 0.09300175309181213,
+    "4": 0.10136738419532776
+  },
+  "no_optimizer_updates": true
+}

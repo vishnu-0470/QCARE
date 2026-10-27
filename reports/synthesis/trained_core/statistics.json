@@ -1,0 +1,69 @@
+{
+   "creator": "Yosys 0.48 (git sha1 aaa534749, ccache clang 14.0.0-1ubuntu1.1 -O3 -flto -flto)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\qnn_engine": {
+         "num_wires":         2070,
+         "num_wire_bits":     15955,
+         "num_pub_wires":     270,
+         "num_pub_wire_bits": 3773,
+         "num_ports":         10,
+         "num_port_bits":     153,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4046,
+         "num_cells_by_type": {
+            "BUFG": 1,
+            "CARRY4": 245,
+            "DSP48E1": 23,
+            "FDRE": 646,
+            "FDSE": 1,
+            "IBUF": 28,
+            "INV": 181,
+            "LUT1": 58,
+            "LUT2": 693,
+            "LUT3": 503,
+            "LUT4": 192,
+            "LUT5": 341,
+            "LUT6": 756,
+            "MUXF7": 187,
+            "MUXF8": 46,
+            "OBUF": 125,
+            "RAMB36E1": 20
+         }
+      }
+   },
+      "design": {
+         "num_wires":         2070,
+         "num_wire_bits":     15955,
+         "num_pub_wires":     270,
+         "num_pub_wire_bits": 3773,
+         "num_ports":         10,
+         "num_port_bits":     153,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4046,
+         "num_cells_by_type": {
+            "BUFG": 1,
+            "CARRY4": 245,
+            "DSP48E1": 23,
+            "FDRE": 646,
+            "FDSE": 1,
+            "IBUF": 28,
+            "INV": 181,
+            "LUT1": 58,
+            "LUT2": 693,
+            "LUT3": 503,
+            "LUT4": 192,
+            "LUT5": 341,
+            "LUT6": 756,
+            "MUXF7": 187,
+            "MUXF8": 46,
+            "OBUF": 125,
+            "RAMB36E1": 20
+         }
+      }
+}
+

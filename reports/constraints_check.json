@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "used_pin_count": 21,
+  "pins": {
+    "clk": "W5",
+    "btnC": "U18",
+    "sw[0]": "V17",
+    "sw[1]": "V16",
+    "led[0]": "U16",
+    "led[1]": "E19",
+    "led[2]": "U19",
+    "led[3]": "V19",
+    "led[4]": "W18",
+    "seg[0]": "W7",
+    "seg[1]": "W6",
+    "seg[2]": "U8",
+    "seg[3]": "V8",
+    "seg[4]": "U5",
+    "seg[5]": "V5",
+    "seg[6]": "U7",
+    "dp": "V7",
+    "an[0]": "U2",
+    "an[1]": "U4",
+    "an[2]": "V4",
+    "an[3]": "W4"
+  },
+  "clock_constraint_ns": 10.0,
+  "reference": "https://github.com/Digilent/digilent-xdc/blob/master/Basys-3-Master.xdc",
+  "scope": "digital pin mapping and declared clock only; no timing closure/electrical/physical check"
+}

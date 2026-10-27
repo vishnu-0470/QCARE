@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "73326930266c3fdd7e3baa01c903b2ba2be54ab3abf2da2ecde63c0bb51f6688",
+  "evaluation_completed_once": true,
+  "previous_DS2_results_known": true,
+  "accuracy": 0.9026726775076477,
+  "macro_f1": 0.3603077042683235,
+  "target_status": "PASS",
+  "ten_full_integer_oracle_vectors": "PASS"
+}

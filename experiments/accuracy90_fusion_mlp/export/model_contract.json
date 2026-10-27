@@ -1,0 +1,39 @@
+{
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "original_backbone_convolutions": 14,
+  "added_pointwise_convolutions": 1,
+  "head_hidden_channels": 32,
+  "FC_input_channels": 32,
+  "NOPS": 23,
+  "NW": 10248,
+  "NB": 181,
+  "weight_bits": 4,
+  "bias_bits": 16,
+  "input_bits": 8,
+  "auxiliary_features": 16,
+  "auxiliary_RAM_base": 32064,
+  "hidden_RAM_base": 32080,
+  "activation_RAM_used": 32112,
+  "input_memory_tokens_per_vector": 3616,
+  "input_layout": "3600 CWT row-major signed bytes, then16 signed auxiliary feature bytes; loader maps latter to32064..32079",
+  "input_exponent": -3,
+  "hidden_exponent": -4,
+  "weight_exponents": [
+    -3,
+    -3
+  ],
+  "hidden_requant_shift": 2,
+  "logit_exponent": -7,
+  "rounding": "floor(x+0.5), post-ReLU saturation0..127",
+  "host_preprocessing": [
+    "CWT",
+    "causal RR/morphology proxies"
+  ],
+  "baseline_weight_backbone_sha256": "7ee9066c6396f4a83837cc17eecfb5118d03edcc6521911ba4b615816e378a03"
+}

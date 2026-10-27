@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "selected": {
+    "folder": "accuracy98_software",
+    "checkpoint": "selected.joblib",
+    "sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+    "validation_accuracy": 0.9257136678200693,
+    "validation_macro_f1": 0.3957079433808987
+  },
+  "DS1_candidates": [
+    {
+      "folder": "accuracy98_software",
+      "checkpoint": "selected.joblib",
+      "sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+      "validation_accuracy": 0.9257136678200693,
+      "validation_macro_f1": 0.3957079433808987
+    },
+    {
+      "folder": "accuracy98_forest",
+      "checkpoint": "candidate1.joblib",
+      "sha256": "c237a59b4519265c248b7298cd8c61a96b9a57894042c479517c31e89875ce6a",
+      "validation_accuracy": 0.9192257785467128,
+      "validation_macro_f1": 0.3614003710721863
+    }
+  ],
+  "selection": "DS1 validation accuracy, ties macroF1",
+  "previous_DS2_results_known": true,
+  "no_followup_DS2_model_selection": true
+}

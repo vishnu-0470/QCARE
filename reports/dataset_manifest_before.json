@@ -1,0 +1,1124 @@
+{
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "required_records": 44,
+  "valid_records": 0,
+  "records": [
+    {
+      "record": "100",
+      "split": "DS2",
+      "expected_files": [
+        "100.hea",
+        "100.dat",
+        "100.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": true,
+          "bytes": 166,
+          "sha256": "95fbdda0454fffae1a2dab1a5ac53e924ae97691c028cdd3ee82f2446b73c066",
+          "publisher_hash_match": false
+        },
+        "dat": {
+          "present": true,
+          "bytes": 1950000,
+          "sha256": "b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639",
+          "publisher_hash_match": true
+        },
+        "atr": {
+          "present": true,
+          "bytes": 4558,
+          "sha256": "8d8a5349fb16638ebbf649f1779d12e96d91b736b2aafe59db43719ae583d471",
+          "publisher_hash_match": true
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Publisher hash mismatch (modified or incomplete source)"
+    },
+    {
+      "record": "101",
+      "split": "DS1",
+      "expected_files": [
+        "101.hea",
+        "101.dat",
+        "101.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "103",
+      "split": "DS2",
+      "expected_files": [
+        "103.hea",
+        "103.dat",
+        "103.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "105",
+      "split": "DS2",
+      "expected_files": [
+        "105.hea",
+        "105.dat",
+        "105.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "106",
+      "split": "DS1",
+      "expected_files": [
+        "106.hea",
+        "106.dat",
+        "106.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "108",
+      "split": "DS1",
+      "expected_files": [
+        "108.hea",
+        "108.dat",
+        "108.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "109",
+      "split": "DS1",
+      "expected_files": [
+        "109.hea",
+        "109.dat",
+        "109.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "111",
+      "split": "DS2",
+      "expected_files": [
+        "111.hea",
+        "111.dat",
+        "111.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "112",
+      "split": "DS1",
+      "expected_files": [
+        "112.hea",
+        "112.dat",
+        "112.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "113",
+      "split": "DS2",
+      "expected_files": [
+        "113.hea",
+        "113.dat",
+        "113.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "114",
+      "split": "DS1",
+      "expected_files": [
+        "114.hea",
+        "114.dat",
+        "114.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "115",
+      "split": "DS1",
+      "expected_files": [
+        "115.hea",
+        "115.dat",
+        "115.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "116",
+      "split": "DS1",
+      "expected_files": [
+        "116.hea",
+        "116.dat",
+        "116.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "117",
+      "split": "DS2",
+      "expected_files": [
+        "117.hea",
+        "117.dat",
+        "117.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "118",
+      "split": "DS1",
+      "expected_files": [
+        "118.hea",
+        "118.dat",
+        "118.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "119",
+      "split": "DS1",
+      "expected_files": [
+        "119.hea",
+        "119.dat",
+        "119.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": true,
+          "bytes": 753303,
+          "sha256": "12d27a42188d6e23c78561a7f7db34b869e1677ee68f6c4acbaaf0945155ffed",
+          "publisher_hash_match": false
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,atr"
+    },
+    {
+      "record": "121",
+      "split": "DS2",
+      "expected_files": [
+        "121.hea",
+        "121.dat",
+        "121.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "122",
+      "split": "DS1",
+      "expected_files": [
+        "122.hea",
+        "122.dat",
+        "122.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "123",
+      "split": "DS2",
+      "expected_files": [
+        "123.hea",
+        "123.dat",
+        "123.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "124",
+      "split": "DS1",
+      "expected_files": [
+        "124.hea",
+        "124.dat",
+        "124.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "200",
+      "split": "DS2",
+      "expected_files": [
+        "200.hea",
+        "200.dat",
+        "200.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "201",
+      "split": "DS1",
+      "expected_files": [
+        "201.hea",
+        "201.dat",
+        "201.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "202",
+      "split": "DS2",
+      "expected_files": [
+        "202.hea",
+        "202.dat",
+        "202.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "203",
+      "split": "DS1",
+      "expected_files": [
+        "203.hea",
+        "203.dat",
+        "203.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "205",
+      "split": "DS1",
+      "expected_files": [
+        "205.hea",
+        "205.dat",
+        "205.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "207",
+      "split": "DS1",
+      "expected_files": [
+        "207.hea",
+        "207.dat",
+        "207.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "208",
+      "split": "DS1",
+      "expected_files": [
+        "208.hea",
+        "208.dat",
+        "208.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "209",
+      "split": "DS1",
+      "expected_files": [
+        "209.hea",
+        "209.dat",
+        "209.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "210",
+      "split": "DS2",
+      "expected_files": [
+        "210.hea",
+        "210.dat",
+        "210.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "212",
+      "split": "DS2",
+      "expected_files": [
+        "212.hea",
+        "212.dat",
+        "212.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "213",
+      "split": "DS2",
+      "expected_files": [
+        "213.hea",
+        "213.dat",
+        "213.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "214",
+      "split": "DS2",
+      "expected_files": [
+        "214.hea",
+        "214.dat",
+        "214.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "215",
+      "split": "DS1",
+      "expected_files": [
+        "215.hea",
+        "215.dat",
+        "215.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "219",
+      "split": "DS2",
+      "expected_files": [
+        "219.hea",
+        "219.dat",
+        "219.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "220",
+      "split": "DS1",
+      "expected_files": [
+        "220.hea",
+        "220.dat",
+        "220.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "221",
+      "split": "DS2",
+      "expected_files": [
+        "221.hea",
+        "221.dat",
+        "221.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "222",
+      "split": "DS2",
+      "expected_files": [
+        "222.hea",
+        "222.dat",
+        "222.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "223",
+      "split": "DS1",
+      "expected_files": [
+        "223.hea",
+        "223.dat",
+        "223.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "228",
+      "split": "DS2",
+      "expected_files": [
+        "228.hea",
+        "228.dat",
+        "228.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "230",
+      "split": "DS1",
+      "expected_files": [
+        "230.hea",
+        "230.dat",
+        "230.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "231",
+      "split": "DS2",
+      "expected_files": [
+        "231.hea",
+        "231.dat",
+        "231.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "232",
+      "split": "DS2",
+      "expected_files": [
+        "232.hea",
+        "232.dat",
+        "232.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "233",
+      "split": "DS2",
+      "expected_files": [
+        "233.hea",
+        "233.dat",
+        "233.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    },
+    {
+      "record": "234",
+      "split": "DS2",
+      "expected_files": [
+        "234.hea",
+        "234.dat",
+        "234.atr"
+      ],
+      "files": {
+        "hea": {
+          "present": false,
+          "bytes": 0
+        },
+        "dat": {
+          "present": false,
+          "bytes": 0
+        },
+        "atr": {
+          "present": false,
+          "bytes": 0
+        }
+      },
+      "status": "BLOCKED",
+      "exclusion_reason": "Missing: hea,dat,atr"
+    }
+  ],
+  "protocol": "conventional_de_Chazal_DS1_DS2",
+  "same_subject_caveat": "201 in DS1 and 202 in DS2 originate from the same individual; conventional split is not strictly subject-disjoint",
+  "raw_synthetic_training": false
+}

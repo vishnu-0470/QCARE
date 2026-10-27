@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checkpoint": "fusion_qat.pt",
+  "sha256": "abe58c94fb959319ddb9a109b66d0ae3902d7603988d0bcd8bdc8d380528bd7b",
+  "DS1_only_selection": true,
+  "previous_DS2_results_known": true,
+  "DS2_not_evaluated_in_followup": true
+}

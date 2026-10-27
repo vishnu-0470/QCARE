@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "saved_predictions_recomputed_metrics_with_sklearn": [
+    "quantized_current_irn",
+    "float_same_latent_parameters",
+    "float_warm_start_checkpoint",
+    "RR_logistic_baseline"
+  ],
+  "DS2_count": 49688,
+  "DS2_records": 22,
+  "checkpoint_hash_unchanged": true,
+  "synthesis_netlist_files_and_static_checks": "PASS",
+  "trained_RTL_logs": "PASS",
+  "python_compileall": "PASS",
+  "shell_syntax": "PASS",
+  "scope": "artifact integrity and saved-prediction metrics only; no retraining or new DS2 inference"
+}

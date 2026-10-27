@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checkpoint": "calibrated_qat.pt",
+  "sha256": "a5f53f0768851d0a8bf45c53a60ea7fe559171ddcc3205eb10ec6c77a7b7b364",
+  "selected_alpha": 0.125,
+  "DS1_only_selection": true,
+  "DS2_not_evaluated_in_this_followup": true,
+  "previous_DS2_results_known": true,
+  "architecture_and_weights_preserved": true
+}

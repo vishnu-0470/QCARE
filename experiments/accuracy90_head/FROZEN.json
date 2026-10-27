@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checkpoint": "refit_qat.pt",
+  "sha256": "89d622af2275f6ab76a23e230214cb46bde99c5a95fc7d31cf9f821ba278251f",
+  "selection": "DS1 record-held-out validation only",
+  "previous_DS2_results_known": true,
+  "DS2_not_evaluated_in_followup": true
+}

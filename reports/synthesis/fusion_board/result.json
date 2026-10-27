@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "cwd": "experiments/accuracy90_fusion_mlp/board_export",
+  "scope": "generic Xilinx 7-series synthesis; no placement/routing, timing or power measurement",
+  "memory_files_sha256": {
+    "gen/qnn_prog.mem.wide": "376b8c3d993e9e633fae918794a605a9374ab9aba3338343f872af48c0600ddc",
+    "gen/beats.mem": "3d80d8cefec38b85e35edf0d19a3db49c3bb5ba0b308084de420a4691684af43",
+    "gen/qnn_w.mem": "17d18b1d25a16dc1bef14accee047a0e0456a0c6f54832d55e4c20e3e6d8019c",
+    "gen/qnn_b.mem": "aa3fdabb2413e53e4d4cd9772c759c1e10b082ac5a1c34e7d44f8ec1667789b5",
+    "gen/qnn_params.vh": "331c8fbd13e70fd56c52f95f2dacf1e40d5f4d8d9a98577c82f3680546b46c86",
+    "gen/qnn_prog.mem": "e6817d187a62af963a5483760cd5b452687b0a9e85885482cda66dadf1c016b6"
+  },
+  "source_sha256": {
+    "rtl/qnn/qnn_engine.v": "6c9e91bdb3bcf95b72b23f97760bf5187ae1b0aa69ac10036eec12e7370a704d",
+    "rtl/basys3/basys3_qnn_fusion_top.v": "dda461b00886ec0d9376b4b809a259dfe618d744d8f450232790153107dad7d1"
+  },
+  "tool": "Yosys 0.48 (git sha1 aaa534749, ccache clang 14.0.0-1ubuntu1.1 -O3 -flto -flto)",
+  "top": "basys3_qnn_fusion_top",
+  "cells": {
+    "BUFG": 1,
+    "CARRY4": 269,
+    "DSP48E1": 24,
+    "FDRE": 743,
+    "FDSE": 2,
+    "IBUF": 4,
+    "INV": 209,
+    "LUT1": 49,
+    "LUT2": 624,
+    "LUT3": 571,
+    "LUT4": 236,
+    "LUT5": 310,
+    "LUT6": 825,
+    "MUXF7": 179,
+    "MUXF8": 42,
+    "OBUF": 17,
+    "RAMB18E1": 7,
+    "RAMB36E1": 21
+  },
+  "LUT_primitives": 2615,
+  "FF": 745,
+  "RAMB36": 21,
+  "RAMB18": 7,
+  "DSP48": 24,
+  "CARRY4": 269,
+  "timing_status": "NOT TESTED",
+  "power_status": "NOT TESTED"
+}

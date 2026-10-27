@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "model": "software classifier; not the 4W FPGA network",
+  "record": "100",
+  "beat_index": 0,
+  "R_sample_0based": 370,
+  "annotated_class": "N",
+  "predicted_class": "N",
+  "software_scores": {
+    "N": 0.999987859279731,
+    "S": 7.421418962877126e-06,
+    "V": 1.3161029221528945e-06,
+    "F": 2.5594994017324773e-06,
+    "Q": 8.436989822521683e-07
+  },
+  "model_sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+  "output_directory": "C:\\QCARE_FPGA\\experiments\\software_replay\\record100_beat0"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "accuracy": 0.93342456931251,
+  "macro_f1": 0.41095551174929035,
+  "target_status": "FAIL",
+  "selected_model_sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+  "selection_completed_before_this_evaluation": true,
+  "previous_DS2_results_known": true
+}

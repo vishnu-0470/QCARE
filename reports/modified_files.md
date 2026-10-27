@@ -1,0 +1,616 @@
+# Complete modified-file inventory
+
+Original files: 180. Modified original files: 13. New paths: 590. Missing originals: 0.
+
+Every original is recoverable from `backups/original_project.zip`; original hashes are in `backups/original_sha256.json`. Per-file current hashes and distribution exclusions are in `modified_files.json`.
+
+## Modified original files
+
+| File | Original SHA256 | Current SHA256 |
+|---|---|---|
+| STATUS.md | 267d55653e0438fa678aeea82a46c8060bb62d889e717ad79558c15215a40580 | 43729ad6c7416f57f7a52c02f416438a9569b99a58220bf24276fb80105573b7 |
+| data/100.hea | 95fbdda0454fffae1a2dab1a5ac53e924ae97691c028cdd3ee82f2446b73c066 | 60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e |
+| data/119.dat | 12d27a42188d6e23c78561a7f7db34b869e1677ee68f6c4acbaaf0945155ffed | 02a286a28e69b441568add915f16a2856b22bab893bf8729ee9654411ed3a5aa |
+| matlab/cwt/quantize_map_int8.m | 52f8a6e1656d1f337988c2a7d3ebb56c9e71515646a38e324471ecd4be600b31 | 3ab99304c25f1b9f790dd337aa2768e2afc177dd8297aa3624b576eb05189bb1 |
+| matlab/qat/qnn_export.m | dbde66de551a5e2984df07c181d37d63bbb5661df26b9d3527d703dc193173bd | 726611195ef305271a6c6aad4e18bee9fa40ede62775cd7f3424a5057d17b42a |
+| rtl/basys3/basys3.xdc | 200f37556c66efd42e216845f1485d78f2e5e97f814fd60424192d2a2599a270 | 99d3b8c50579d71bad8f5d8005f418e6fdc2b5b66344e6f1bfa70ecb953eba70 |
+| rtl/basys3/basys3_qnn_top.v | be31b9b998e946cce8f4098857ac3c26aa447a3ce385b73b757befdcbc197a14 | 467c18302b1467a45f630ab11cf6cbfd9d4d89ce999f7ecccc285c4d2342014e |
+| rtl/qnn/qnn_engine.v | 26cecd3cf110c47371d55ece4b2a091ffa9ee2d40f4802110060464c0a7c0c73 | 6c9e91bdb3bcf95b72b23f97760bf5187ae1b0aa69ac10036eec12e7370a704d |
+| sim/AFE_CADENCE_COSIM.md | 2d2c00b45344ffc76885c193bee19e8267ec84799257c416f2cce57136076c08 | 2ff0aa7735c00deabee424882d8748a354a37957e118875434d7fa592f2a29f0 |
+| sim/prepare_afe_qnn_input.m | 4678faada0788ac0119334cf31204e76c732d02249b92d9dcc1b2ef0fed4c950 | 0a76fac1482c26ecd26d9f00bd14f5d6c81201db25c57d99e6fcb5fe5571ae3a |
+| sim/regress_iso.sh | 0364e66e561cb1072e716048efcce9680e0e0266a6c55e8e4ac5b330330399bb | bb786c4ce875f009bf377efebb21d674bd12cc195369312f3ad0494921049c7b |
+| sim/run_case.sh | a3967a411c55c3323e765970e0a154347c03b3bb91507de351b80eaef65f65a5 | 142c12483cc502ad5b6ac527b574ddadc319d92d22ff4f4c4425093b9e759c06 |
+| sim/tb_afe_qnn.v | 0e2f2ad6df28186bca4a99dc501ee423be68750897c7e8894a0ecfceef04c80f | 3fe97a8540337dabc15a1e7444063ac3139f68615c87b269055139609f1145b2 |
+
+## New paths
+
+- README.md
+- RUN_ALL.command
+- RUN_GUIDE.md
+- backups/original_project.zip
+- backups/original_sha256.json
+- backups/pre_accuracy90/python/qcare/program.py
+- backups/pre_followup_portability/python/infer_record_fusion90.py
+- backups/pre_release_validation/python/evaluate_frozen.py
+- backups/pre_release_validation/python/prepare_dataset.py
+- backups/pre_release_validation/python/qcare/metrics.py
+- backups/pre_release_validation/python/train_current.py
+- backups/pre_repair/data/100.hea
+- backups/pre_repair/data/119.dat
+- backups/pre_repair/matlab/cwt/quantize_map_int8.m
+- backups/pre_repair/matlab/qat/qnn_export.m
+- backups/pre_repair/rtl/basys3/basys3.xdc
+- backups/pre_repair/rtl/basys3/basys3_qnn_top.v
+- backups/pre_repair/rtl/qnn/qnn_engine.v
+- backups/pre_repair/sim/AFE_CADENCE_COSIM.md
+- backups/pre_repair/sim/prepare_afe_qnn_input.m
+- backups/pre_repair/sim/regress_iso.sh
+- backups/pre_repair/sim/run_case.sh
+- backups/pre_repair/sim/tb_afe_qnn.v
+- data/101.atr
+- data/101.dat
+- data/101.hea
+- data/103.atr
+- data/103.dat
+- data/103.hea
+- data/105.atr
+- data/105.dat
+- data/105.hea
+- data/106.atr
+- data/106.dat
+- data/106.hea
+- data/108.atr
+- data/108.dat
+- data/108.hea
+- data/109.atr
+- data/109.dat
+- data/109.hea
+- data/111.atr
+- data/111.dat
+- data/111.hea
+- data/112.atr
+- data/112.dat
+- data/112.hea
+- data/113.atr
+- data/113.dat
+- data/113.hea
+- data/114.atr
+- data/114.dat
+- data/114.hea
+- data/115.atr
+- data/115.dat
+- data/115.hea
+- data/116.atr
+- data/116.dat
+- data/116.hea
+- data/117.atr
+- data/117.dat
+- data/117.hea
+- data/118.atr
+- data/118.dat
+- data/118.hea
+- data/119.atr
+- data/119.hea
+- data/121.atr
+- data/121.dat
+- data/121.hea
+- data/122.atr
+- data/122.dat
+- data/122.hea
+- data/123.atr
+- data/123.dat
+- data/123.hea
+- data/124.atr
+- data/124.dat
+- data/124.hea
+- data/200.atr
+- data/200.dat
+- data/200.hea
+- data/201.atr
+- data/201.dat
+- data/201.hea
+- data/202.atr
+- data/202.dat
+- data/202.hea
+- data/203.atr
+- data/203.dat
+- data/203.hea
+- data/205.atr
+- data/205.dat
+- data/205.hea
+- data/207.atr
+- data/207.dat
+- data/207.hea
+- data/208.atr
+- data/208.dat
+- data/208.hea
+- data/209.atr
+- data/209.dat
+- data/209.hea
+- data/210.atr
+- data/210.dat
+- data/210.hea
+- data/212.atr
+- data/212.dat
+- data/212.hea
+- data/213.atr
+- data/213.dat
+- data/213.hea
+- data/214.atr
+- data/214.dat
+- data/214.hea
+- data/215.atr
+- data/215.dat
+- data/215.hea
+- data/219.atr
+- data/219.dat
+- data/219.hea
+- data/220.atr
+- data/220.dat
+- data/220.hea
+- data/221.atr
+- data/221.dat
+- data/221.hea
+- data/222.atr
+- data/222.dat
+- data/222.hea
+- data/223.atr
+- data/223.dat
+- data/223.hea
+- data/228.atr
+- data/228.dat
+- data/228.hea
+- data/230.atr
+- data/230.dat
+- data/230.hea
+- data/231.atr
+- data/231.dat
+- data/231.hea
+- data/232.atr
+- data/232.dat
+- data/232.hea
+- data/233.atr
+- data/233.dat
+- data/233.hea
+- data/234.atr
+- data/234.dat
+- data/234.hea
+- data/ATTRIBUTION.md
+- data/SHA256SUMS.txt
+- data/download_log.json
+- experiments/accuracy90/DS1_validation_logits.npz
+- experiments/accuracy90/FROZEN.json
+- experiments/accuracy90/calibrated_qat.pt
+- experiments/accuracy90/calibration_results.json
+- experiments/accuracy90/export/gen/qnn_b.mem
+- experiments/accuracy90/export/gen/qnn_params.vh
+- experiments/accuracy90/export/gen/qnn_prog.mem
+- experiments/accuracy90/export/gen/qnn_prog.mem.wide
+- experiments/accuracy90/export/gen/qnn_w.mem
+- experiments/accuracy90/export/model_contract.json
+- experiments/accuracy90/selection_protocol.json
+- experiments/accuracy90_diagnostics/DS1_validation_only.json
+- experiments/accuracy90_diagnostics/logreg_C0.001.joblib
+- experiments/accuracy90_diagnostics/logreg_C0.01.joblib
+- experiments/accuracy90_diagnostics/logreg_C0.1.joblib
+- experiments/accuracy90_diagnostics/logreg_C1.0.joblib
+- experiments/accuracy90_diagnostics/teacher.joblib
+- experiments/accuracy90_fusion/DS1_aux_features.npz
+- experiments/accuracy90_fusion/FROZEN.json
+- experiments/accuracy90_fusion/config.json
+- experiments/accuracy90_fusion/export/gen/qnn_b.mem
+- experiments/accuracy90_fusion/export/gen/qnn_params.vh
+- experiments/accuracy90_fusion/export/gen/qnn_prog.mem
+- experiments/accuracy90_fusion/export/gen/qnn_prog.mem.wide
+- experiments/accuracy90_fusion/export/gen/qnn_w.mem
+- experiments/accuracy90_fusion/export/model_contract.json
+- experiments/accuracy90_fusion/fusion_qat.pt
+- experiments/accuracy90_fusion/history_weight_0.0.json
+- experiments/accuracy90_fusion/history_weight_0.25.json
+- experiments/accuracy90_fusion/history_weight_0.5.json
+- experiments/accuracy90_fusion/selection_results.json
+- experiments/accuracy90_fusion_mlp/DS2_followup/EVALUATED.json
+- experiments/accuracy90_fusion_mlp/DS2_followup/metrics.json
+- experiments/accuracy90_fusion_mlp/DS2_followup/predictions.csv
+- experiments/accuracy90_fusion_mlp/DS2_followup/predictions.npz
+- experiments/accuracy90_fusion_mlp/FINAL_SELECTION.json
+- experiments/accuracy90_fusion_mlp/FROZEN.json
+- experiments/accuracy90_fusion_mlp/board_export/expected.txt
+- experiments/accuracy90_fusion_mlp/board_export/gen/beats.mem
+- experiments/accuracy90_fusion_mlp/board_export/gen/qnn_b.mem
+- experiments/accuracy90_fusion_mlp/board_export/gen/qnn_params.vh
+- experiments/accuracy90_fusion_mlp/board_export/gen/qnn_prog.mem
+- experiments/accuracy90_fusion_mlp/board_export/gen/qnn_prog.mem.wide
+- experiments/accuracy90_fusion_mlp/board_export/gen/qnn_w.mem
+- experiments/accuracy90_fusion_mlp/config.json
+- experiments/accuracy90_fusion_mlp/export/gen/qnn_b.mem
+- experiments/accuracy90_fusion_mlp/export/gen/qnn_params.vh
+- experiments/accuracy90_fusion_mlp/export/gen/qnn_prog.mem
+- experiments/accuracy90_fusion_mlp/export/gen/qnn_prog.mem.wide
+- experiments/accuracy90_fusion_mlp/export/gen/qnn_w.mem
+- experiments/accuracy90_fusion_mlp/export/model_contract.json
+- experiments/accuracy90_fusion_mlp/export/vec/identities.json
+- experiments/accuracy90_fusion_mlp/export/vec/qnn_vec_exp.txt
+- experiments/accuracy90_fusion_mlp/export/vec/qnn_vec_in.mem
+- experiments/accuracy90_fusion_mlp/fusion_mlp_qat.pt
+- experiments/accuracy90_fusion_mlp/selection_results.json
+- experiments/accuracy90_fusion_mlp/w0.0_kd0.0_best.pt
+- experiments/accuracy90_fusion_mlp/w0.0_kd0.0_history.json
+- experiments/accuracy90_fusion_mlp/w0.0_kd0.35_best.pt
+- experiments/accuracy90_fusion_mlp/w0.0_kd0.35_history.json
+- experiments/accuracy90_fusion_mlp/w0.25_kd0.0_best.pt
+- experiments/accuracy90_fusion_mlp/w0.25_kd0.0_history.json
+- experiments/accuracy90_fusion_mlp/w0.25_kd0.35_best.pt
+- experiments/accuracy90_fusion_mlp/w0.25_kd0.35_history.json
+- experiments/accuracy90_head/DS1_frozen_gap_features.npz
+- experiments/accuracy90_head/FROZEN.json
+- experiments/accuracy90_head/config.json
+- experiments/accuracy90_head/export/gen/qnn_b.mem
+- experiments/accuracy90_head/export/gen/qnn_params.vh
+- experiments/accuracy90_head/export/gen/qnn_prog.mem
+- experiments/accuracy90_head/export/gen/qnn_prog.mem.wide
+- experiments/accuracy90_head/export/gen/qnn_w.mem
+- experiments/accuracy90_head/export/model_contract.json
+- experiments/accuracy90_head/history_weight_0.0.json
+- experiments/accuracy90_head/history_weight_0.25.json
+- experiments/accuracy90_head/history_weight_0.5.json
+- experiments/accuracy90_head/refit_qat.pt
+- experiments/accuracy90_head/selection_results.json
+- experiments/accuracy98_forest/FROZEN.json
+- experiments/accuracy98_forest/candidate0.joblib
+- experiments/accuracy98_forest/candidate1.joblib
+- experiments/accuracy98_forest/config.json
+- experiments/accuracy98_forest/selection_results.json
+- experiments/accuracy98_selected/EVALUATED.json
+- experiments/accuracy98_selected/FROZEN.json
+- experiments/accuracy98_selected/metrics.json
+- experiments/accuracy98_selected/predictions.csv
+- experiments/accuracy98_selected/predictions.npz
+- experiments/accuracy98_software/DS1_extended_features.npz
+- experiments/accuracy98_software/FROZEN.json
+- experiments/accuracy98_software/candidate0.joblib
+- experiments/accuracy98_software/candidate1.joblib
+- experiments/accuracy98_software/config.json
+- experiments/accuracy98_software/selected.joblib
+- experiments/accuracy98_software/selection_results.json
+- experiments/afe_adc_checked/adapter_report.json
+- experiments/afe_adc_checked/adc_12bit_500sps.csv
+- experiments/afe_adc_checked/cwt_map.csv
+- experiments/afe_adc_checked/segment_360.csv
+- experiments/afe_adc_checked/vec/identities.json
+- experiments/afe_adc_checked/vec/qnn_vec_exp.txt
+- experiments/afe_adc_checked/vec/qnn_vec_in.mem
+- experiments/afe_adc_trained/adapter_report.json
+- experiments/afe_adc_trained/adc_12bit_500sps.csv
+- experiments/afe_adc_trained/cwt_map.csv
+- experiments/afe_adc_trained/segment_360.csv
+- experiments/afe_adc_trained/vec/identities.json
+- experiments/afe_adc_trained/vec/qnn_vec_exp.txt
+- experiments/afe_adc_trained/vec/qnn_vec_in.mem
+- experiments/beat_trace/annotated_beat.csv
+- experiments/beat_trace/cwt_map.csv
+- experiments/beat_trace/integer_operation_trace.npz
+- experiments/beat_trace/trace.json
+- experiments/cache/aug_lookup.npy — excluded: large regenerable CWT/augmentation cache; hashes and preparation metadata included
+- experiments/cache/augmented_maps.npy — excluded: large regenerable CWT/augmentation cache; hashes and preparation metadata included
+- experiments/cache/beats.npz — excluded: large regenerable CWT/augmentation cache; hashes and preparation metadata included
+- experiments/cache/maps.npy — excluded: large regenerable CWT/augmentation cache; hashes and preparation metadata included
+- experiments/cache/preparation.json
+- experiments/ds1_current/FROZEN.json
+- experiments/ds1_current/best_float.pt
+- experiments/ds1_current/best_qat.pt
+- experiments/ds1_current/board_export/expected.txt
+- experiments/ds1_current/board_export/gen/beats.mem
+- experiments/ds1_current/board_export/gen/qnn_b.mem
+- experiments/ds1_current/board_export/gen/qnn_params.vh
+- experiments/ds1_current/board_export/gen/qnn_prog.mem
+- experiments/ds1_current/board_export/gen/qnn_prog.mem.wide
+- experiments/ds1_current/board_export/gen/qnn_w.mem
+- experiments/ds1_current/calibration.json
+- experiments/ds1_current/config.json
+- experiments/ds1_current/export/gen/qnn_b.mem
+- experiments/ds1_current/export/gen/qnn_params.vh
+- experiments/ds1_current/export/gen/qnn_prog.mem
+- experiments/ds1_current/export/gen/qnn_prog.mem.wide
+- experiments/ds1_current/export/gen/qnn_w.mem
+- experiments/ds1_current/export/model_contract.json
+- experiments/ds1_current/export/vec/identities.json
+- experiments/ds1_current/export/vec/python_golden.mat
+- experiments/ds1_current/export/vec/qnn_vec_exp.txt
+- experiments/ds1_current/export/vec/qnn_vec_in.mem
+- experiments/ds1_current/frozen_model.mat
+- experiments/ds1_current/history.json
+- experiments/ds1_current/last.pt
+- experiments/ds2_evaluation/EVALUATED.json
+- experiments/ds2_evaluation/metrics.json
+- experiments/ds2_evaluation/predictions.csv
+- experiments/ds2_evaluation/predictions.npz
+- experiments/port_check/gen/qnn_b.mem
+- experiments/port_check/gen/qnn_params.vh
+- experiments/port_check/gen/qnn_prog.mem
+- experiments/port_check/gen/qnn_w.mem
+- experiments/port_check/model_contract.json
+- experiments/replay/record100_beat0/beat.csv
+- experiments/replay/record100_beat0/cwt_map.csv
+- experiments/replay/record100_beat0/inference.json
+- experiments/replay/record100_beat0/vec/qnn_vec_exp.txt
+- experiments/replay/record100_beat0/vec/qnn_vec_in.mem
+- experiments/rr_baseline/model.joblib
+- experiments/rr_baseline/training.json
+- experiments/software_replay/record100_beat0/inference.json
+- fpga/requirements-yosys.txt
+- fpga/vivado_fusion90.tcl
+- fpga/vivado_qcare.tcl
+- python/__pycache__/benchmark_training_cpu.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/calibrate_accuracy90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/check_baseline.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/check_constraints.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/check_provenance.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/check_real_memorization.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/diagnose_fusion90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/download_dataset.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/evaluate_accuracy98.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/evaluate_frozen.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/evaluate_fusion90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/final_report.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/fit_rr_baseline.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/infer_record_fusion90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/infer_record_software.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/package_followup.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/package_release.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/performance_summary.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/plot_cwt_outputs.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/plot_results.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/prepare_cadence.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/prepare_dataset.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/refit_accuracy90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/refit_fusion90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/replay_streaming.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/report_followup.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/run_board_checks.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/run_fusion90_checks.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/run_fusion_board_checks.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/run_rtl_checks.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/show_latest_results.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/synthesize.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/synthesize_fusion90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/test_current_port.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/trace_frozen_beat.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/train_accuracy98.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/train_accuracy98_forest.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/train_current.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/__pycache__/train_fusion_mlp90.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/benchmark_training_cpu.py
+- python/calibrate_accuracy90.py
+- python/check_baseline.py
+- python/check_constraints.py
+- python/check_provenance.py
+- python/check_real_memorization.py
+- python/diagnose_fusion90.py
+- python/download_dataset.py
+- python/evaluate_accuracy98.py
+- python/evaluate_frozen.py
+- python/evaluate_fusion90.py
+- python/final_report.py
+- python/fit_rr_baseline.py
+- python/infer_record_fusion90.py
+- python/infer_record_software.py
+- python/package_followup.py
+- python/package_release.py
+- python/performance_summary.py
+- python/plot_cwt_outputs.py
+- python/plot_results.py
+- python/prepare_cadence.py
+- python/prepare_dataset.py
+- python/qcare/__init__.py
+- python/qcare/__pycache__/__init__.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/data.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/frontend.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/fusion_deploy.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/metrics.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/model.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/program.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/provenance.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/record_input.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/rhythm_features.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/__pycache__/strong_features.cpython-312.pyc — excluded: regenerable compiled artifact
+- python/qcare/data.py
+- python/qcare/frontend.py
+- python/qcare/fusion_deploy.py
+- python/qcare/metrics.py
+- python/qcare/model.py
+- python/qcare/program.py
+- python/qcare/provenance.py
+- python/qcare/record_input.py
+- python/qcare/rhythm_features.py
+- python/qcare/strong_features.py
+- python/refit_accuracy90.py
+- python/refit_fusion90.py
+- python/replay_streaming.py
+- python/report_followup.py
+- python/run_board_checks.py
+- python/run_fusion90_checks.py
+- python/run_fusion_board_checks.py
+- python/run_rtl_checks.py
+- python/show_latest_results.py
+- python/synthesize.py
+- python/synthesize_fusion90.py
+- python/test_current_port.py
+- python/trace_frozen_beat.py
+- python/train_accuracy98.py
+- python/train_accuracy98_forest.py
+- python/train_current.py
+- python/train_fusion_mlp90.py
+- reports/ENGINEERING_AUDIT.md
+- reports/FINAL_REPORT.md
+- reports/FOLLOWUP_VALIDATION.json
+- reports/LATEST_REPORT.md
+- reports/LATEST_RESULTS.json
+- reports/PERFORMANCE.md
+- reports/RELEASE_REVIEW.md
+- reports/acceptance.json
+- reports/accuracy90/DS2_evaluation.log
+- reports/accuracy90/DS2_metrics.json
+- reports/accuracy90/RTL_fusion.log
+- reports/accuracy90/RTL_fusion.vvp — excluded: regenerable compiled artifact
+- reports/accuracy90/RTL_fusion_runner.log
+- reports/accuracy90/baseline_recheck.log
+- reports/accuracy90/board_runner.log
+- reports/accuracy90/calibration.log
+- reports/accuracy90/calibration_results.json
+- reports/accuracy90/diagnostics.log
+- reports/accuracy90/fusion_refit.log
+- reports/accuracy90/head_refit.log
+- reports/accuracy90/launcher_demo.log
+- reports/accuracy90/nonlinear_fusion.log
+- reports/accuracy90/record100_RTL.log
+- reports/accuracy90/record100_RTL.vvp — excluded: regenerable compiled artifact
+- reports/accuracy90/record100_RTL_runner.log
+- reports/accuracy90/record100_replay.log
+- reports/accuracy90/synthesis_run.log
+- reports/accuracy98/DS2_evaluation.log
+- reports/accuracy98/DS2_metrics.json
+- reports/accuracy98/forest.log
+- reports/accuracy98/launcher_demo.log
+- reports/accuracy98/record100_replay.log
+- reports/accuracy98/training.log
+- reports/afe_qnn_checked.log
+- reports/afe_qnn_checked.vvp — excluded: regenerable compiled artifact
+- reports/afe_trained_checked.log
+- reports/afe_trained_checked.vvp — excluded: regenerable compiled artifact
+- reports/baseline/afe.log
+- reports/baseline/afe.vvp — excluded: regenerable compiled artifact
+- reports/baseline/board.log
+- reports/baseline/board.vvp — excluded: regenerable compiled artifact
+- reports/baseline/qnn.log
+- reports/baseline/qnn.vvp — excluded: regenerable compiled artifact
+- reports/baseline/software_checks.json
+- reports/baseline/streaming.vvp — excluded: regenerable compiled artifact
+- reports/baseline/streaming_compile.log
+- reports/baseline/streaming_frozen_replay.json
+- reports/baseline/streaming_rE.log
+- reports/baseline/streaming_rE.txt
+- reports/baseline/streaming_rE_cycles.txt
+- reports/baseline/streaming_regression.log
+- reports/baseline/yosys_memory.log
+- reports/baseline/yosys_synthesis.log
+- reports/baseline_archive.json
+- reports/batched_inference_diagnostic.json
+- reports/beat_trace.json
+- reports/beat_trace.log
+- reports/board_synthesis_run.log
+- reports/cadence_adapter.json
+- reports/cadence_preparation.log
+- reports/cadence_trained_preparation.log
+- reports/constraints_check.json
+- reports/core_synthesis_run.log
+- reports/cpu_training_benchmark.json
+- reports/current_port_checks.json
+- reports/dataset_manifest.json
+- reports/dataset_manifest_before.json
+- reports/dataset_preparation.json
+- reports/ds2_evaluation.log
+- reports/ds2_evaluation_initial_failure.log
+- reports/ds2_metrics.json
+- reports/followup_report_build.log
+- reports/fusion_board_checked.json
+- reports/fusion_board_checked.log
+- reports/fusion_board_checked.vvp — excluded: regenerable compiled artifact
+- reports/guard_rejections.json
+- reports/modified_files.json
+- reports/modified_files.md
+- reports/package_files_sha256.json
+- reports/packaging_run.log — excluded: packager console is generated after the archive; external verification JSON is delivered separately
+- reports/performance_build.log
+- reports/performance_summary.json
+- reports/plots/CWT_outputs/Cadence_2csv_CWT.png
+- reports/plots/CWT_outputs/MITBIH_record100_CWT.png
+- reports/plots/RR_logistic_baseline_confusion.png
+- reports/plots/accuracy_followup/fusion90_confusion.png
+- reports/plots/accuracy_followup/software93_confusion.png
+- reports/plots/float_same_latent_parameters_confusion.png
+- reports/plots/float_warm_start_checkpoint_confusion.png
+- reports/plots/quantized_current_irn_confusion.png
+- reports/plots/training.png
+- reports/preparation.log
+- reports/provenance_check.log
+- reports/provenance_checks.json
+- reports/qnn_packed.vvp — excluded: regenerable compiled artifact
+- reports/qnn_packed_regression.log
+- reports/qnn_premap.json — excluded: partial/duplicate synthesis artifact; executed logs and final mapped netlists included
+- reports/qnn_trained_synth.edif — excluded: partial/duplicate synthesis artifact; executed logs and final mapped netlists included
+- reports/real_qat_memorization.json
+- reports/real_qat_memorization.log
+- reports/reference_sources.json
+- reports/release_validation.json
+- reports/report_build.log
+- reports/rr_training.log
+- reports/synthesis/board_report_parser_failure.json
+- reports/synthesis/fusion_board/check.txt
+- reports/synthesis/fusion_board/console.log
+- reports/synthesis/fusion_board/netlist.edif
+- reports/synthesis/fusion_board/netlist.json
+- reports/synthesis/fusion_board/result.json
+- reports/synthesis/fusion_board/run.ys
+- reports/synthesis/fusion_board/statistics.json
+- reports/synthesis/fusion_board/yosys.log
+- reports/synthesis/report_path_failure/console.log
+- reports/synthesis/report_path_failure/result.json
+- reports/synthesis/report_path_failure/run.ys
+- reports/synthesis/report_path_failure/yosys.log
+- reports/synthesis/trained_board/check.txt
+- reports/synthesis/trained_board/console.log
+- reports/synthesis/trained_board/netlist.edif
+- reports/synthesis/trained_board/netlist.json
+- reports/synthesis/trained_board/result.json
+- reports/synthesis/trained_board/run.ys
+- reports/synthesis/trained_board/statistics.json
+- reports/synthesis/trained_board/yosys.log
+- reports/synthesis/trained_core/check.txt
+- reports/synthesis/trained_core/console.log
+- reports/synthesis/trained_core/netlist.edif
+- reports/synthesis/trained_core/netlist.json
+- reports/synthesis/trained_core/result.json
+- reports/synthesis/trained_core/run.ys
+- reports/synthesis/trained_core/statistics.json
+- reports/synthesis/trained_core/yosys.log
+- reports/tool_inventory.json
+- reports/trained_board_checked.json
+- reports/trained_board_checked.log
+- reports/trained_board_checked.vvp — excluded: regenerable compiled artifact
+- reports/trained_qnn_checked.log
+- reports/trained_qnn_checked.vvp — excluded: regenerable compiled artifact
+- reports/training.log
+- reports/training_execution.json
+- reports/training_initial.log
+- reports/training_resume.log
+- reports/yosys_help.txt
+- reports/yosys_packed_synthesis.log
+- reports/yosys_premap.log
+- reports/yosys_stable_install.log
+- reports/yosys_stable_synthesis.log
+- requirements.txt
+- rtl/basys3/basys3_qnn_fusion_top.v
+- rtl/basys3/gen/qnn_prog.mem.wide
+- rtl/qnn/gen/qnn_prog.mem.wide
+- run.sh
+- sim/runs/rA/params.vh
+- sim/runs/rA/tree.mem
+- sim/runs/rA/wrom.mem
+- sim/runs/rB/params.vh
+- sim/runs/rB/tree.mem
+- sim/runs/rB/wrom.mem
+- sim/runs/rC/params.vh
+- sim/runs/rC/tree.mem
+- sim/runs/rC/wrom.mem
+- sim/runs/rD/params.vh
+- sim/runs/rD/tree.mem
+- sim/runs/rD/wrom.mem
+- sim/runs/rE/params.vh
+- sim/runs/rE/tree.mem
+- sim/runs/rE/wrom.mem
+- sim/tb_board_checked.v
+- sim/tb_board_fusion_checked.v
+- sim/tb_qnn_checked.v
+- sim/tb_qnn_fusion_checked.v
+- sim/verify_current_export.m

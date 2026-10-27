@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "training_completed_epochs": 300,
+  "floating_epochs": 30,
+  "QAT_epochs": 270,
+  "initial_command_in_checkpoint": "python/train_current.py --run experiments/ds1_current --epochs 300 --float-epochs 30 --seed 26 --threads 4",
+  "resume_command_in_final_config": "python/train_current.py --run experiments/ds1_current --epochs 300 --float-epochs 30 --seed 26 --threads 1 --resume experiments/ds1_current/last.pt",
+  "CPU_thread_phases": [
+    {
+      "epochs_0based": [
+        0,
+        29
+      ],
+      "threads": 4
+    },
+    {
+      "epochs_0based": [
+        30,
+        299
+      ],
+      "threads": 1
+    }
+  ],
+  "resume_reason": "Torch weights_only loading rejected TorchVersion metadata at QAT transition; narrowed safe-global loader added; resumed exact last checkpoint/RNG, no earlier epochs repeated",
+  "thread_change_reason": "real DS1 forward/backward batch benchmark favored one thread; see reports/cpu_training_benchmark.json",
+  "seed": 26,
+  "best_float_epoch_0based": 13,
+  "best_QAT_epoch_0based": 41,
+  "selection": "DS1 record-held-out macro-F1, no DS2 selection",
+  "model_checkpoint_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5",
+  "fit_record_count": 18,
+  "validation_record_count": 4,
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "wfdb": "4.3.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "matplotlib": "3.11.2",
+    "yowasp-yosys": "0.70.0.0.post1259",
+    "yowasp-runtime": "1.96",
+    "wasmtime": "47.0.1"
+  },
+  "executed_model_source_sha256": "036ca1d4e6bdb936f49af62d6e0a7c69cf7cf2eadc3d9533e0b73e67e3e08575",
+  "training_source_before_postrun_provenance_checks_sha256": "cb24dd9aabc80cf2332443930ac9f86af50df31a21f59ff21e3f51d045d3ee07",
+  "no_synthetic_training": true,
+  "DS2_numeric_verification_repair": "float64 power-of-two emulation only; no changed parameters, scales or checkpoint choice; failed initial log retained",
+  "unresolved_generalization_failure": "S sensitivity low; F/Q zero true positives on DS2; not a successful accuracy-target model"
+}

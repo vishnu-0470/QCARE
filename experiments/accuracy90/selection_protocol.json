@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "experiment": "accuracy90_followup",
+  "baseline_preserved": true,
+  "method": "DS1 prior-shift calibration of frozen FC bias only",
+  "formula": "delta_B16 = floor(alpha * log(p_natural_DS1 / p_balanced_epoch) / output_logit_scale + 0.5)",
+  "natural_prior_additive_smoothing": 1,
+  "alpha_grid": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0,
+    1.125,
+    1.25,
+    1.375,
+    1.5,
+    1.625,
+    1.75,
+    1.875,
+    2.0,
+    2.125,
+    2.25,
+    2.375,
+    2.5
+  ],
+  "selection": "maximum DS1 record-held-out accuracy, then macro-F1; require macro-F1 >= unadjusted validation macro-F1, V sensitivity>=0.50 and pooled non-N sensitivity>=0.20",
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "DS2_used_for_selection": false,
+  "DS2_already_reported_in_previous_experiment": true,
+  "architecture": "unchanged current 14conv/fourIRN, 4W/8A/B16",
+  "training_data": "real MIT-BIH only; no new ECG training examples",
+  "fit_counts": [
+    37616,
+    471,
+    3254,
+    394,
+    8
+  ],
+  "balanced_epoch_counts": [
+    5000,
+    2000,
+    3254,
+    2000,
+    2000
+  ],
+  "natural_priors": [
+    0.9010491520551883,
+    0.011305930823033439,
+    0.07796780684104627,
+    0.009461531091309764,
+    0.00021557918942224777
+  ],
+  "balanced_priors": [
+    0.3507787287778869,
+    0.14031149151115477,
+    0.2282867966886488,
+    0.14031149151115477,
+    0.14031149151115477
+  ],
+  "log_prior_ratio": [
+    0.9434041865642838,
+    -2.5185374508346534,
+    -1.07430671001444,
+    -2.696630671519087,
+    -6.478291859083989
+  ],
+  "dataset_manifest_sha256": "2c9deedef0c1a42490e972d4f393969afe50d4c81d67419a11252b0984a2a119",
+  "baseline_checkpoint_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "torch": "2.14.1",
+  "numpy": "2.5.4"
+}

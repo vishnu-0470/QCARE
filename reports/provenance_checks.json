@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "raw_files_checked": 132,
+  "cache_files_checked": 4,
+  "raw_publisher_hashes_unchanged": true,
+  "checkpoint_preparation_matches_current": true,
+  "changed_file_rejected": true,
+  "missing_file_rejected": true,
+  "no_training_or_DS2_inference_rerun": true
+}

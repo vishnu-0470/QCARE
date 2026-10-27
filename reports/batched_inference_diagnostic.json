@@ -1,0 +1,117 @@
+[
+  {
+    "dtype": "torch.float32",
+    "batch": 200,
+    "first_beat_record": "100",
+    "first_beat_R_sample": 370,
+    "different_layers": [
+      {
+        "operation": "irn1_A",
+        "mismatches": 48,
+        "maximum_error": 1
+      },
+      {
+        "operation": "irn1_BM",
+        "mismatches": 161,
+        "maximum_error": 1
+      },
+      {
+        "operation": "irn1_B1P",
+        "mismatches": 88,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn1",
+        "mismatches": 184,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn2_A",
+        "mismatches": 230,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn2_BM",
+        "mismatches": 212,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn2_B1P",
+        "mismatches": 156,
+        "maximum_error": 3
+      },
+      {
+        "operation": "irn2",
+        "mismatches": 397,
+        "maximum_error": 3
+      },
+      {
+        "operation": "pool",
+        "mismatches": 128,
+        "maximum_error": 3
+      },
+      {
+        "operation": "ds2",
+        "mismatches": 38,
+        "maximum_error": 1
+      },
+      {
+        "operation": "irn3_A",
+        "mismatches": 49,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn3_BM",
+        "mismatches": 51,
+        "maximum_error": 3
+      },
+      {
+        "operation": "irn3_B1P",
+        "mismatches": 27,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn3",
+        "mismatches": 88,
+        "maximum_error": 3
+      },
+      {
+        "operation": "irn4_A",
+        "mismatches": 21,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn4_BM",
+        "mismatches": 41,
+        "maximum_error": 2
+      },
+      {
+        "operation": "irn4_B1P",
+        "mismatches": 13,
+        "maximum_error": 3
+      },
+      {
+        "operation": "irn4",
+        "mismatches": 47,
+        "maximum_error": 4
+      },
+      {
+        "operation": "gap",
+        "mismatches": 1,
+        "maximum_error": 1
+      },
+      {
+        "operation": "logits",
+        "mismatches": 5,
+        "maximum_error": 4
+      }
+    ]
+  },
+  {
+    "dtype": "torch.float64",
+    "batch": 200,
+    "first_beat_record": "100",
+    "first_beat_R_sample": 370,
+    "different_layers": []
+  }
+]

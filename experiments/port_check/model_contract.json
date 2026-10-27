@@ -1,0 +1,68 @@
+{
+  "activation_exponents": {
+    "ds1": -5,
+    "blk1": -5,
+    "blk2": -5,
+    "ds2": -5,
+    "blk3": -5,
+    "blk4": -4
+  },
+  "weight_exponents": {
+    "ds1": -2,
+    "irn1_W1": -2,
+    "irn1_W2": -3,
+    "irn1_W3": -3,
+    "irn2_W1": -2,
+    "irn2_W2": -4,
+    "irn2_W3": -3,
+    "ds2": -3,
+    "irn3_W1": -2,
+    "irn3_W2": -4,
+    "irn3_W3": -3,
+    "irn4_W1": -2,
+    "irn4_W2": -4,
+    "irn4_W3": -3,
+    "fc": -3
+  },
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "activation_ram_used": 32064,
+  "addresses": {
+    "input": 0,
+    "ds1": 3600,
+    "irn1_A": 6800,
+    "irn1_BM": 10000,
+    "irn1_B1P": 13200,
+    "irn1": 14800,
+    "irn2_A": 18000,
+    "irn2_BM": 21200,
+    "irn2_B1P": 24400,
+    "irn2": 26000,
+    "pool": 29200,
+    "ds2": 30000,
+    "irn3_A": 30256,
+    "irn3_BM": 30512,
+    "irn3_B1P": 30768,
+    "irn3": 30896,
+    "irn4_A": 31152,
+    "irn4_BM": 31408,
+    "irn4_B1P": 31664,
+    "irn4": 31792,
+    "gap": 32048
+  },
+  "weight_bits": 4,
+  "weight_rom_container_bits": 16,
+  "bias_bits": 16,
+  "activation_range": [
+    0,
+    127
+  ],
+  "logit_bits": 24,
+  "rounding": "floor(x+0.5)",
+  "row_major": true
+}

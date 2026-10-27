@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "source_sha256": "2cdcdbcc519618cd13f9227584d27152637fe6f2fd0f357f254664870d8cf7e0",
+  "source_rows": 796,
+  "duplicate_timestamps_averaged": 1,
+  "duration_s": 3.0,
+  "adc": {
+    "bits": 12,
+    "encoding": "offset-binary endpoint-inclusive behavioral model",
+    "range_V": [
+      -1,
+      1
+    ],
+    "sample_rate_hz": 500,
+    "quantization": "clip(floor((v+1)/2*4095+0.5),0,4095)",
+    "LSB_V": 0.0004884004884004884,
+    "codes_minmax": [
+      449,
+      3456
+    ],
+    "rail_codes": 0,
+    "provisional_not_physical_ADC": true
+  },
+  "model_fs_hz": 360,
+  "resampling": "linear interpolation, same legacy method; no additional antialias claim",
+  "segment": {
+    "pre": 140,
+    "post": 219,
+    "peak_index_0based": 746,
+    "peak_time_s": 2.0722222222222224,
+    "peak_method": "largest absolute deviation from whole-segment median within valid candidates, noncausal heuristic without annotations"
+  },
+  "memory_order": "scale row-major, signed bytes, 3600 tokens",
+  "canonical_quantizer": "floor(128*M+0.5), saturation [-128,127]",
+  "legacy_vector_replay": {
+    "status": "PASS",
+    "different_tokens": 0,
+    "maximum_code_difference": 0,
+    "baseline_vector_preserved": true
+  },
+  "supplied_ADC_CSV_replay": {
+    "status": "PASS",
+    "different_codes": 0,
+    "samples": 1501
+  },
+  "classification_ground_truth": "unavailable; this is co-simulation, not DS2 accuracy"
+}

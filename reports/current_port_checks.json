@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "architecture_parameter_count": 9293,
+  "real_DS1_beats_checked": [
+    {
+      "record": "101",
+      "peak": 396,
+      "label": 0
+    },
+    {
+      "record": "101",
+      "peak": 711,
+      "label": 0
+    },
+    {
+      "record": "101",
+      "peak": 135299,
+      "label": 1
+    },
+    {
+      "record": "101",
+      "peak": 215567,
+      "label": 1
+    },
+    {
+      "record": "106",
+      "peak": 32867,
+      "label": 2
+    },
+    {
+      "record": "106",
+      "peak": 33045,
+      "label": 2
+    },
+    {
+      "record": "109",
+      "peak": 6259,
+      "label": 3
+    },
+    {
+      "record": "109",
+      "peak": 11310,
+      "label": 3
+    },
+    {
+      "record": "101",
+      "peak": 114705,
+      "label": 4
+    },
+    {
+      "record": "101",
+      "peak": 308294,
+      "label": 4
+    }
+  ],
+  "all_21_operation_outputs_bit_exact": true,
+  "golden_scope": "PyTorch QAT vs independent NumPy program oracle; no DS2 used",
+  "exponents": {
+    "ds1": -5,
+    "blk1": -5,
+    "blk2": -5,
+    "ds2": -5,
+    "blk3": -5,
+    "blk4": -4
+  }
+}

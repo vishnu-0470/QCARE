@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "returncode": 0,
+  "cwd": "experiments/ds1_current/export",
+  "scope": "generic Xilinx 7-series synthesis; no placement/routing, timing or power measurement",
+  "source_sha256": {
+    "rtl/qnn/qnn_engine.v": "6c9e91bdb3bcf95b72b23f97760bf5187ae1b0aa69ac10036eec12e7370a704d"
+  },
+  "tool": "Yosys 0.48 (git sha1 aaa534749, ccache clang 14.0.0-1ubuntu1.1 -O3 -flto -flto)",
+  "top": "qnn_engine",
+  "cells": {
+    "BUFG": 1,
+    "CARRY4": 245,
+    "DSP48E1": 23,
+    "FDRE": 646,
+    "FDSE": 1,
+    "IBUF": 28,
+    "INV": 181,
+    "LUT1": 58,
+    "LUT2": 693,
+    "LUT3": 503,
+    "LUT4": 192,
+    "LUT5": 341,
+    "LUT6": 756,
+    "MUXF7": 187,
+    "MUXF8": 46,
+    "OBUF": 125,
+    "RAMB36E1": 20
+  },
+  "LUT_primitives": 2543,
+  "FF": 647,
+  "RAMB36": 20,
+  "RAMB18": 0,
+  "DSP48": 23,
+  "CARRY4": 245,
+  "timing_status": "NOT TESTED",
+  "power_status": "NOT TESTED",
+  "memory_files_sha256": {
+    "gen/qnn_prog.mem.wide": "bea0db22674c14ae36dcaacf978dac1e2c763bc17c22be04bfa4de7333ca477d",
+    "gen/qnn_w.mem": "7ee9066c6396f4a83837cc17eecfb5118d03edcc6521911ba4b615816e378a03",
+    "gen/qnn_b.mem": "b1f7ad4c76808551b14f0489c55696a433cd2b20f1e9e8f362b96e9a0aabb075",
+    "gen/qnn_params.vh": "36fb467a7d679b77feb684445a2fd4414402e09b99f4c25f23472b8b9b7e8e28",
+    "gen/qnn_prog.mem": "57f3e4efd0362ffb413ae28d58b5d188ba71a86a3406eaafd4fae68692bef815"
+  }
+}

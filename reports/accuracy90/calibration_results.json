@@ -1,0 +1,2447 @@
+{
+  "status": "PASS",
+  "baseline_validation": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 9248,
+    "accuracy": 0.7715181660899654,
+    "macro_f1": 0.31105785572876454,
+    "macro_f1_present": 0.3888223196609557,
+    "confusion_matrix": [
+      [
+        6708,
+        710,
+        328,
+        2,
+        474
+      ],
+      [
+        362,
+        85,
+        14,
+        1,
+        10
+      ],
+      [
+        152,
+        11,
+        342,
+        0,
+        29
+      ],
+      [
+        1,
+        2,
+        17,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 8222,
+        "sensitivity": 0.8158598881050839,
+        "positive_predictivity": 0.9286999861553371,
+        "precision": 0.9286999861553371,
+        "specificity": 0.4980506822612086,
+        "f1": 0.8686306247976691
+      },
+      "S": {
+        "support": 472,
+        "sensitivity": 0.18008474576271186,
+        "positive_predictivity": 0.1051980198019802,
+        "precision": 0.1051980198019802,
+        "specificity": 0.917616226071103,
+        "f1": 0.13281249999999997
+      },
+      "V": {
+        "support": 534,
+        "sensitivity": 0.6404494382022472,
+        "positive_predictivity": 0.48787446504992865,
+        "precision": 0.48787446504992865,
+        "specificity": 0.9588019279320633,
+        "f1": 0.5538461538461538
+      },
+      "F": {
+        "support": 20,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9996749024707412,
+        "f1": 0.0
+      },
+      "Q": {
+        "support": 0,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9445285467128027,
+        "f1": 0.0
+      }
+    }
+  },
+  "selected": {
+    "alpha": 0.125,
+    "FC_bias_delta_B16": [
+      8,
+      -20,
+      -9,
+      -22,
+      -52
+    ],
+    "validation_accuracy": 0.8053633217993079,
+    "validation_macro_f1": 0.31268871605907306,
+    "non_N_sensitivity": 0.40350877192982454,
+    "eligible": true,
+    "metrics": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.8053633217993079,
+      "macro_f1": 0.31268871605907306,
+      "macro_f1_present": 0.3908608950738413,
+      "confusion_matrix": [
+        [
+          7034,
+          669,
+          320,
+          1,
+          198
+        ],
+        [
+          386,
+          68,
+          13,
+          1,
+          4
+        ],
+        [
+          175,
+          9,
+          346,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.8555096083677938,
+          "positive_predictivity": 0.926013691416535,
+          "precision": 0.926013691416535,
+          "specificity": 0.4522417153996101,
+          "f1": 0.8893665444430395
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.1440677966101695,
+          "positive_predictivity": 0.09090909090909091,
+          "precision": 0.09090909090909091,
+          "specificity": 0.9225159525979946,
+          "f1": 0.11147540983606558
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.6479400749063671,
+          "positive_predictivity": 0.49712643678160917,
+          "precision": 0.49712643678160917,
+          "specificity": 0.9598347486802846,
+          "f1": 0.5626016260162601
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9997832683138275,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9777249134948097,
+          "f1": 0.0
+        }
+      }
+    }
+  },
+  "all_candidates": [
+    {
+      "alpha": 0.0,
+      "FC_bias_delta_B16": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "validation_accuracy": 0.7715181660899654,
+      "validation_macro_f1": 0.31105785572876454,
+      "non_N_sensitivity": 0.4161793372319688,
+      "eligible": true,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.7715181660899654,
+        "macro_f1": 0.31105785572876454,
+        "macro_f1_present": 0.3888223196609557,
+        "confusion_matrix": [
+          [
+            6708,
+            710,
+            328,
+            2,
+            474
+          ],
+          [
+            362,
+            85,
+            14,
+            1,
+            10
+          ],
+          [
+            152,
+            11,
+            342,
+            0,
+            29
+          ],
+          [
+            1,
+            2,
+            17,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8158598881050839,
+            "positive_predictivity": 0.9286999861553371,
+            "precision": 0.9286999861553371,
+            "specificity": 0.4980506822612086,
+            "f1": 0.8686306247976691
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.18008474576271186,
+            "positive_predictivity": 0.1051980198019802,
+            "precision": 0.1051980198019802,
+            "specificity": 0.917616226071103,
+            "f1": 0.13281249999999997
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.6404494382022472,
+            "positive_predictivity": 0.48787446504992865,
+            "precision": 0.48787446504992865,
+            "specificity": 0.9588019279320633,
+            "f1": 0.5538461538461538
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9996749024707412,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9445285467128027,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.125,
+      "FC_bias_delta_B16": [
+        8,
+        -20,
+        -9,
+        -22,
+        -52
+      ],
+      "validation_accuracy": 0.8053633217993079,
+      "validation_macro_f1": 0.31268871605907306,
+      "non_N_sensitivity": 0.40350877192982454,
+      "eligible": true,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8053633217993079,
+        "macro_f1": 0.31268871605907306,
+        "macro_f1_present": 0.3908608950738413,
+        "confusion_matrix": [
+          [
+            7034,
+            669,
+            320,
+            1,
+            198
+          ],
+          [
+            386,
+            68,
+            13,
+            1,
+            4
+          ],
+          [
+            175,
+            9,
+            346,
+            0,
+            4
+          ],
+          [
+            1,
+            2,
+            17,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8555096083677938,
+            "positive_predictivity": 0.926013691416535,
+            "precision": 0.926013691416535,
+            "specificity": 0.4522417153996101,
+            "f1": 0.8893665444430395
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.1440677966101695,
+            "positive_predictivity": 0.09090909090909091,
+            "precision": 0.09090909090909091,
+            "specificity": 0.9225159525979946,
+            "f1": 0.11147540983606558
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.6479400749063671,
+            "positive_predictivity": 0.49712643678160917,
+            "precision": 0.49712643678160917,
+            "specificity": 0.9598347486802846,
+            "f1": 0.5626016260162601
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9997832683138275,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9777249134948097,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.25,
+      "FC_bias_delta_B16": [
+        15,
+        -40,
+        -17,
+        -43,
+        -104
+      ],
+      "validation_accuracy": 0.8135813148788927,
+      "validation_macro_f1": 0.30476844923798174,
+      "non_N_sensitivity": 0.37524366471734893,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8135813148788927,
+        "macro_f1": 0.30476844923798174,
+        "macro_f1_present": 0.38096056154747715,
+        "confusion_matrix": [
+          [
+            7139,
+            619,
+            340,
+            0,
+            124
+          ],
+          [
+            403,
+            53,
+            14,
+            1,
+            1
+          ],
+          [
+            194,
+            6,
+            332,
+            0,
+            2
+          ],
+          [
+            2,
+            2,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8682802237898322,
+            "positive_predictivity": 0.9225898164900491,
+            "precision": 0.9225898164900491,
+            "specificity": 0.4161793372319688,
+            "f1": 0.8946115288220552
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.11228813559322035,
+            "positive_predictivity": 0.07794117647058824,
+            "precision": 0.07794117647058824,
+            "specificity": 0.9285551504102096,
+            "f1": 0.09201388888888888
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.6217228464419475,
+            "positive_predictivity": 0.47293447293447294,
+            "precision": 0.47293447293447294,
+            "specificity": 0.9575395914620152,
+            "f1": 0.5372168284789645
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9998916341569137,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9862673010380623,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.375,
+      "FC_bias_delta_B16": [
+        23,
+        -60,
+        -26,
+        -65,
+        -155
+      ],
+      "validation_accuracy": 0.8208261245674741,
+      "validation_macro_f1": 0.30170779933015524,
+      "non_N_sensitivity": 0.3538011695906433,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8208261245674741,
+        "macro_f1": 0.30170779933015524,
+        "macro_f1_present": 0.37713474916269407,
+        "confusion_matrix": [
+          [
+            7228,
+            586,
+            323,
+            0,
+            85
+          ],
+          [
+            419,
+            42,
+            10,
+            1,
+            0
+          ],
+          [
+            207,
+            6,
+            321,
+            0,
+            0
+          ],
+          [
+            3,
+            2,
+            15,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8791048406713695,
+            "positive_predictivity": 0.9199439989817997,
+            "precision": 0.9199439989817997,
+            "specificity": 0.38693957115009747,
+            "f1": 0.8990608868710741
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.08898305084745763,
+            "positive_predictivity": 0.0660377358490566,
+            "precision": 0.0660377358490566,
+            "specificity": 0.9323154056517776,
+            "f1": 0.07581227436823104
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.601123595505618,
+            "positive_predictivity": 0.4798206278026906,
+            "precision": 0.4798206278026906,
+            "specificity": 0.9600642644021116,
+            "f1": 0.5336658354114713
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9998916341569137,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9908088235294118,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.5,
+      "FC_bias_delta_B16": [
+        30,
+        -81,
+        -34,
+        -86,
+        -207
+      ],
+      "validation_accuracy": 0.8264489619377162,
+      "validation_macro_f1": 0.29833474441266034,
+      "non_N_sensitivity": 0.3304093567251462,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8264489619377162,
+        "macro_f1": 0.29833474441266034,
+        "macro_f1_present": 0.3729184305158254,
+        "confusion_matrix": [
+          [
+            7304,
+            548,
+            299,
+            0,
+            71
+          ],
+          [
+            431,
+            33,
+            7,
+            1,
+            0
+          ],
+          [
+            222,
+            6,
+            306,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8883483337387497,
+            "positive_predictivity": 0.9175879396984925,
+            "precision": 0.9175879396984925,
+            "specificity": 0.36062378167641324,
+            "f1": 0.9027314299839327
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.06991525423728813,
+            "positive_predictivity": 0.05612244897959184,
+            "precision": 0.05612244897959184,
+            "specificity": 0.9367593436645396,
+            "f1": 0.062264150943396226
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.5730337078651685,
+            "positive_predictivity": 0.4872611464968153,
+            "precision": 0.4872611464968153,
+            "specificity": 0.9630479687858619,
+            "f1": 0.5266781411359726
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9998916341569137,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9923226643598616,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.625,
+      "FC_bias_delta_B16": [
+        38,
+        -101,
+        -43,
+        -108,
+        -259
+      ],
+      "validation_accuracy": 0.8302335640138409,
+      "validation_macro_f1": 0.29406746384959753,
+      "non_N_sensitivity": 0.30896686159844056,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8302335640138409,
+        "macro_f1": 0.29406746384959753,
+        "macro_f1_present": 0.3675843298119969,
+        "confusion_matrix": [
+          [
+            7361,
+            520,
+            282,
+            0,
+            59
+          ],
+          [
+            441,
+            24,
+            6,
+            1,
+            0
+          ],
+          [
+            235,
+            6,
+            293,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.8952809535392848,
+            "positive_predictivity": 0.9154334038054969,
+            "precision": 0.9154334038054969,
+            "specificity": 0.33723196881091616,
+            "f1": 0.9052450347414376
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.05084745762711865,
+            "positive_predictivity": 0.04363636363636364,
+            "precision": 0.04363636363636364,
+            "specificity": 0.9400638103919782,
+            "f1": 0.04696673189823875
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.548689138576779,
+            "positive_predictivity": 0.490787269681742,
+            "precision": 0.490787269681742,
+            "specificity": 0.9651136102823044,
+            "f1": 0.5181255526083113
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9998916341569137,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9936202422145328,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.75,
+      "FC_bias_delta_B16": [
+        45,
+        -121,
+        -52,
+        -129,
+        -311
+      ],
+      "validation_accuracy": 0.8347750865051903,
+      "validation_macro_f1": 0.2908087493198889,
+      "non_N_sensitivity": 0.29142300194931775,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8347750865051903,
+        "macro_f1": 0.2908087493198889,
+        "macro_f1_present": 0.36351093664986117,
+        "confusion_matrix": [
+          [
+            7421,
+            486,
+            269,
+            0,
+            46
+          ],
+          [
+            448,
+            19,
+            5,
+            0,
+            0
+          ],
+          [
+            249,
+            5,
+            280,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9025784480661639,
+            "positive_predictivity": 0.9136912090618075,
+            "precision": 0.9136912090618075,
+            "specificity": 0.31676413255360625,
+            "f1": 0.9081008321096428
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.04025423728813559,
+            "positive_predictivity": 0.03725490196078431,
+            "precision": 0.03725490196078431,
+            "specificity": 0.9440519598906107,
+            "f1": 0.038696537678207736
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.5243445692883895,
+            "positive_predictivity": 0.49122807017543857,
+            "precision": 0.49122807017543857,
+            "specificity": 0.966720220335093,
+            "f1": 0.5072463768115942
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9950259515570934,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 0.875,
+      "FC_bias_delta_B16": [
+        53,
+        -141,
+        -60,
+        -151,
+        -363
+      ],
+      "validation_accuracy": 0.8397491349480969,
+      "validation_macro_f1": 0.2890152199142516,
+      "non_N_sensitivity": 0.2729044834307992,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8397491349480969,
+        "macro_f1": 0.2890152199142516,
+        "macro_f1_present": 0.3612690248928145,
+        "confusion_matrix": [
+          [
+            7486,
+            462,
+            237,
+            0,
+            37
+          ],
+          [
+            454,
+            15,
+            3,
+            0,
+            0
+          ],
+          [
+            264,
+            5,
+            265,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9104840671369496,
+            "positive_predictivity": 0.9120370370370371,
+            "precision": 0.9120370370370371,
+            "specificity": 0.2962962962962963,
+            "f1": 0.9112598904443092
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.03177966101694915,
+            "positive_predictivity": 0.03112033195020747,
+            "precision": 0.03112033195020747,
+            "specificity": 0.9467866909753874,
+            "f1": 0.031446540880503145
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.49625468164794007,
+            "positive_predictivity": 0.508637236084453,
+            "precision": 0.508637236084453,
+            "specificity": 0.970621987606151,
+            "f1": 0.5023696682464456
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9959991349480969,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.0,
+      "FC_bias_delta_B16": [
+        60,
+        -161,
+        -69,
+        -173,
+        -415
+      ],
+      "validation_accuracy": 0.8416955017301038,
+      "validation_macro_f1": 0.28565223377640114,
+      "non_N_sensitivity": 0.25633528265107214,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8416955017301038,
+        "macro_f1": 0.28565223377640114,
+        "macro_f1_present": 0.35706529222050143,
+        "confusion_matrix": [
+          [
+            7521,
+            449,
+            219,
+            0,
+            33
+          ],
+          [
+            461,
+            9,
+            2,
+            0,
+            0
+          ],
+          [
+            276,
+            4,
+            254,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9147409389442958,
+            "positive_predictivity": 0.9100919651500484,
+            "precision": 0.9100919651500484,
+            "specificity": 0.27582846003898637,
+            "f1": 0.9124105301467913
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.019067796610169493,
+            "positive_predictivity": 0.01948051948051948,
+            "precision": 0.01948051948051948,
+            "specificity": 0.9483819507748404,
+            "f1": 0.019271948608137048
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.4756554307116105,
+            "positive_predictivity": 0.5194274028629857,
+            "precision": 0.5194274028629857,
+            "specificity": 0.9730319026853339,
+            "f1": 0.4965786901270772
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.996431660899654,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.125,
+      "FC_bias_delta_B16": [
+        68,
+        -181,
+        -77,
+        -194,
+        -466
+      ],
+      "validation_accuracy": 0.8435337370242214,
+      "validation_macro_f1": 0.28398739617991253,
+      "non_N_sensitivity": 0.246588693957115,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8435337370242214,
+        "macro_f1": 0.28398739617991253,
+        "macro_f1_present": 0.3549842452248907,
+        "confusion_matrix": [
+          [
+            7548,
+            439,
+            208,
+            0,
+            27
+          ],
+          [
+            462,
+            8,
+            2,
+            0,
+            0
+          ],
+          [
+            285,
+            4,
+            245,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            13,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9180248114813914,
+            "positive_predictivity": 0.90917851120212,
+            "precision": 0.90917851120212,
+            "specificity": 0.2651072124756335,
+            "f1": 0.9135802469135802
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.01694915254237288,
+            "positive_predictivity": 0.017738359201773836,
+            "precision": 0.017738359201773836,
+            "specificity": 0.9495214220601641,
+            "f1": 0.01733477789815818
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.45880149812734083,
+            "positive_predictivity": 0.5235042735042735,
+            "precision": 0.5235042735042735,
+            "specificity": 0.9744089970162956,
+            "f1": 0.4890219560878244
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9970804498269896,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.25,
+      "FC_bias_delta_B16": [
+        75,
+        -201,
+        -86,
+        -216,
+        -518
+      ],
+      "validation_accuracy": 0.846885813148789,
+      "validation_macro_f1": 0.28332605479706685,
+      "non_N_sensitivity": 0.2378167641325536,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.846885813148789,
+        "macro_f1": 0.28332605479706685,
+        "macro_f1_present": 0.35415756849633356,
+        "confusion_matrix": [
+          [
+            7588,
+            422,
+            190,
+            0,
+            22
+          ],
+          [
+            465,
+            6,
+            1,
+            0,
+            0
+          ],
+          [
+            292,
+            4,
+            238,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            13,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9228898078326441,
+            "positive_predictivity": 0.9085249042145593,
+            "precision": 0.9085249042145593,
+            "specificity": 0.2553606237816764,
+            "f1": 0.9156510196693616
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.012711864406779662,
+            "positive_predictivity": 0.013888888888888888,
+            "precision": 0.013888888888888888,
+            "specificity": 0.9514585232452142,
+            "f1": 0.01327433628318584
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.44569288389513106,
+            "positive_predictivity": 0.5384615384615384,
+            "precision": 0.5384615384615384,
+            "specificity": 0.9765893963736516,
+            "f1": 0.48770491803278687
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9976211072664359,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.375,
+      "FC_bias_delta_B16": [
+        83,
+        -222,
+        -95,
+        -237,
+        -570
+      ],
+      "validation_accuracy": 0.8495891003460208,
+      "validation_macro_f1": 0.2819779946155604,
+      "non_N_sensitivity": 0.22709551656920077,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8495891003460208,
+        "macro_f1": 0.2819779946155604,
+        "macro_f1_present": 0.3524724932694505,
+        "confusion_matrix": [
+          [
+            7624,
+            408,
+            171,
+            0,
+            19
+          ],
+          [
+            467,
+            4,
+            1,
+            0,
+            0
+          ],
+          [
+            303,
+            2,
+            229,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9272683045487716,
+            "positive_predictivity": 0.9074029992858843,
+            "precision": 0.9074029992858843,
+            "specificity": 0.24171539961013644,
+            "f1": 0.917228103946102
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00847457627118644,
+            "positive_predictivity": 0.00966183574879227,
+            "precision": 0.00966183574879227,
+            "specificity": 0.953281677301732,
+            "f1": 0.009029345372460496
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.4288389513108614,
+            "positive_predictivity": 0.5544794188861986,
+            "precision": 0.5544794188861986,
+            "specificity": 0.9788845535919211,
+            "f1": 0.48363252375923965
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9979455017301038,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.5,
+      "FC_bias_delta_B16": [
+        91,
+        -242,
+        -103,
+        -259,
+        -622
+      ],
+      "validation_accuracy": 0.8509948096885813,
+      "validation_macro_f1": 0.2796162401651648,
+      "non_N_sensitivity": 0.21637426900584794,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8509948096885813,
+        "macro_f1": 0.2796162401651648,
+        "macro_f1_present": 0.34952030020645597,
+        "confusion_matrix": [
+          [
+            7648,
+            400,
+            162,
+            0,
+            12
+          ],
+          [
+            468,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            314,
+            2,
+            218,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9301873023595232,
+            "positive_predictivity": 0.906375918464091,
+            "precision": 0.906375918464091,
+            "specificity": 0.2300194931773879,
+            "f1": 0.9181272509003602
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00847457627118644,
+            "positive_predictivity": 0.009852216748768473,
+            "precision": 0.009852216748768473,
+            "specificity": 0.9541932543299909,
+            "f1": 0.009111617312072893
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.40823970037453183,
+            "positive_predictivity": 0.5561224489795918,
+            "precision": 0.5561224489795918,
+            "specificity": 0.9800321322010558,
+            "f1": 0.4708423326133909
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9987024221453287,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.625,
+      "FC_bias_delta_B16": [
+        98,
+        -262,
+        -112,
+        -280,
+        -674
+      ],
+      "validation_accuracy": 0.8529411764705882,
+      "validation_macro_f1": 0.2792089377474435,
+      "non_N_sensitivity": 0.21052631578947367,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8529411764705882,
+        "macro_f1": 0.2792089377474435,
+        "macro_f1_present": 0.34901117218430433,
+        "confusion_matrix": [
+          [
+            7672,
+            390,
+            149,
+            0,
+            11
+          ],
+          [
+            468,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            320,
+            2,
+            212,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9331063001702748,
+            "positive_predictivity": 0.9059990552668871,
+            "precision": 0.9059990552668871,
+            "specificity": 0.22417153996101363,
+            "f1": 0.9193529059316955
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00847457627118644,
+            "positive_predictivity": 0.010101010101010102,
+            "precision": 0.010101010101010102,
+            "specificity": 0.9553327256153145,
+            "f1": 0.009216589861751152
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.3970037453183521,
+            "positive_predictivity": 0.5683646112600537,
+            "precision": 0.5683646112600537,
+            "specificity": 0.9815239843929309,
+            "f1": 0.4674751929437707
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.998810553633218,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.75,
+      "FC_bias_delta_B16": [
+        106,
+        -282,
+        -120,
+        -302,
+        -726
+      ],
+      "validation_accuracy": 0.8548875432525952,
+      "validation_macro_f1": 0.2788238300609444,
+      "non_N_sensitivity": 0.20565302144249512,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8548875432525952,
+        "macro_f1": 0.2788238300609444,
+        "macro_f1_present": 0.3485297875761805,
+        "confusion_matrix": [
+          [
+            7695,
+            381,
+            137,
+            0,
+            9
+          ],
+          [
+            471,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            323,
+            1,
+            210,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9359036730722452,
+            "positive_predictivity": 0.905400635368867,
+            "precision": 0.905400635368867,
+            "specificity": 0.21637426900584794,
+            "f1": 0.920399497637701
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00211864406779661,
+            "positive_predictivity": 0.0026109660574412533,
+            "precision": 0.0026109660574412533,
+            "specificity": 0.9564721969006381,
+            "f1": 0.0023391812865497076
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.39325842696629215,
+            "positive_predictivity": 0.5882352941176471,
+            "precision": 0.5882352941176471,
+            "specificity": 0.9831305944457195,
+            "f1": 0.4713804713804714
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9990268166089965,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 1.875,
+      "FC_bias_delta_B16": [
+        113,
+        -302,
+        -129,
+        -324,
+        -777
+      ],
+      "validation_accuracy": 0.8567257785467128,
+      "validation_macro_f1": 0.2770878182294718,
+      "non_N_sensitivity": 0.1968810916179337,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8567257785467128,
+        "macro_f1": 0.2770878182294718,
+        "macro_f1_present": 0.34635977278683977,
+        "confusion_matrix": [
+          [
+            7721,
+            368,
+            127,
+            0,
+            6
+          ],
+          [
+            471,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            332,
+            1,
+            201,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9390659207005595,
+            "positive_predictivity": 0.9046280023432923,
+            "precision": 0.9046280023432923,
+            "specificity": 0.20662768031189083,
+            "f1": 0.9215253326967835
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00211864406779661,
+            "positive_predictivity": 0.002702702702702703,
+            "precision": 0.002702702702702703,
+            "specificity": 0.9579535095715588,
+            "f1": 0.0023752969121140144
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.37640449438202245,
+            "positive_predictivity": 0.5964391691394659,
+            "precision": 0.5964391691394659,
+            "specificity": 0.9843929309157677,
+            "f1": 0.46153846153846156
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9993512110726643,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 2.0,
+      "FC_bias_delta_B16": [
+        121,
+        -322,
+        -138,
+        -345,
+        -829
+      ],
+      "validation_accuracy": 0.8571583044982699,
+      "validation_macro_f1": 0.2735398428851238,
+      "non_N_sensitivity": 0.1861598440545809,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8571583044982699,
+        "macro_f1": 0.2735398428851238,
+        "macro_f1_present": 0.34192480360640476,
+        "confusion_matrix": [
+          [
+            7736,
+            357,
+            124,
+            0,
+            5
+          ],
+          [
+            471,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            343,
+            1,
+            190,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9408902943322792,
+            "positive_predictivity": 0.9036327531830394,
+            "precision": 0.9036327531830394,
+            "specificity": 0.195906432748538,
+            "f1": 0.9218852410176965
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.00211864406779661,
+            "positive_predictivity": 0.002785515320334262,
+            "precision": 0.002785515320334262,
+            "specificity": 0.9592069279854147,
+            "f1": 0.0024067388688327317
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.35580524344569286,
+            "positive_predictivity": 0.5882352941176471,
+            "precision": 0.5882352941176471,
+            "specificity": 0.9847372044985081,
+            "f1": 0.4434072345390898
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9994593425605537,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 2.125,
+      "FC_bias_delta_B16": [
+        128,
+        -343,
+        -146,
+        -367,
+        -881
+      ],
+      "validation_accuracy": 0.8585640138408305,
+      "validation_macro_f1": 0.271968712046216,
+      "non_N_sensitivity": 0.18128654970760233,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8585640138408305,
+        "macro_f1": 0.271968712046216,
+        "macro_f1_present": 0.33996089005776997,
+        "confusion_matrix": [
+          [
+            7754,
+            343,
+            123,
+            0,
+            2
+          ],
+          [
+            472,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            347,
+            1,
+            186,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.943079542690343,
+            "positive_predictivity": 0.9032032615026209,
+            "precision": 0.9032032615026209,
+            "specificity": 0.19005847953216373,
+            "f1": 0.922710775272208
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9608021877848678,
+            "f1": 0.0
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.34831460674157305,
+            "positive_predictivity": 0.5867507886435331,
+            "precision": 0.5867507886435331,
+            "specificity": 0.984966720220335,
+            "f1": 0.4371327849588719
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9997837370242214,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 2.25,
+      "FC_bias_delta_B16": [
+        136,
+        -363,
+        -155,
+        -388,
+        -933
+      ],
+      "validation_accuracy": 0.8594290657439446,
+      "validation_macro_f1": 0.2688734309786941,
+      "non_N_sensitivity": 0.17153996101364521,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8594290657439446,
+        "macro_f1": 0.2688734309786941,
+        "macro_f1_present": 0.33609178872336765,
+        "confusion_matrix": [
+          [
+            7772,
+            332,
+            118,
+            0,
+            0
+          ],
+          [
+            472,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            357,
+            1,
+            176,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9452687910484067,
+            "positive_predictivity": 0.9023569023569024,
+            "precision": 0.9023569023569024,
+            "specificity": 0.18031189083820662,
+            "f1": 0.9233145233145232
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9620556061987238,
+            "f1": 0.0
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.3295880149812734,
+            "positive_predictivity": 0.5827814569536424,
+            "precision": 0.5827814569536424,
+            "specificity": 0.9855405095249025,
+            "f1": 0.4210526315789473
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 2.375,
+      "FC_bias_delta_B16": [
+        143,
+        -383,
+        -163,
+        -410,
+        -985
+      ],
+      "validation_accuracy": 0.8589965397923875,
+      "validation_macro_f1": 0.26405081015003545,
+      "non_N_sensitivity": 0.15886939571150097,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8589965397923875,
+        "macro_f1": 0.26405081015003545,
+        "macro_f1_present": 0.3300635126875443,
+        "confusion_matrix": [
+          [
+            7781,
+            325,
+            116,
+            0,
+            0
+          ],
+          [
+            472,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            370,
+            1,
+            163,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9463634152274386,
+            "positive_predictivity": 0.9011001737116386,
+            "precision": 0.9011001737116386,
+            "specificity": 0.16764132553606237,
+            "f1": 0.9231773150619921
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9628532360984503,
+            "f1": 0.0
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.3052434456928839,
+            "positive_predictivity": 0.5679442508710801,
+            "precision": 0.5679442508710801,
+            "specificity": 0.9857700252467294,
+            "f1": 0.3970767356881852
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "alpha": 2.5,
+      "FC_bias_delta_B16": [
+        151,
+        -403,
+        -172,
+        -431,
+        -1037
+      ],
+      "validation_accuracy": 0.8591046712802768,
+      "validation_macro_f1": 0.25780071874362126,
+      "non_N_sensitivity": 0.14327485380116958,
+      "eligible": false,
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.8591046712802768,
+        "macro_f1": 0.25780071874362126,
+        "macro_f1_present": 0.3222508984295266,
+        "confusion_matrix": [
+          [
+            7798,
+            309,
+            115,
+            0,
+            0
+          ],
+          [
+            472,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            387,
+            0,
+            147,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.948431038676721,
+            "positive_predictivity": 0.8995270504095051,
+            "precision": 0.8995270504095051,
+            "specificity": 0.15107212475633527,
+            "f1": 0.9233319519270616
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9647903372835005,
+            "f1": 0.0
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.2752808988764045,
+            "positive_predictivity": 0.5444444444444444,
+            "precision": 0.5444444444444444,
+            "specificity": 0.9858847831076428,
+            "f1": 0.3656716417910448
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "seconds": 1.353910207748413,
+  "weight_ROM_unchanged": true,
+  "only_final_five_biases_changed": true,
+  "FC_bias_before": [
+    108,
+    -45,
+    7,
+    -22,
+    -49
+  ],
+  "FC_bias_after": [
+    116,
+    -65,
+    -2,
+    -44,
+    -101
+  ],
+  "source_checkpoint_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5"
+}

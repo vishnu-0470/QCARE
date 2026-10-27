@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "frozen_checkpoint_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5",
+  "selection_completed_before_evaluation": true,
+  "test_indices_sha256": "54752642c5d2f1514d42d7200083f5427f039b21c438b1f4f5fd2ff5244ae6d0",
+  "same_scored_beats_for_RR_and_QNN": true,
+  "no_DS2_fit_or_tuning": true,
+  "oracle_parity": "all 21 operation tensors on 10 real DS2 beats; batched final logits exact on same 10",
+  "checkpoint_unchanged_after_numeric_fix": true,
+  "primary_quantized_accuracy": 0.6975527290291419,
+  "primary_macro_f1": 0.2585831915750596
+}

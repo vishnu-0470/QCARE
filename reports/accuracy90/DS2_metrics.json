@@ -1,0 +1,204 @@
+{
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "samples": 49688,
+  "accuracy": 0.9026726775076477,
+  "macro_f1": 0.3603077042683235,
+  "macro_f1_present": 0.3603077042683235,
+  "confusion_matrix": [
+    [
+      41943,
+      53,
+      1186,
+      1054,
+      0
+    ],
+    [
+      1647,
+      82,
+      99,
+      9,
+      0
+    ],
+    [
+      353,
+      19,
+      2824,
+      24,
+      0
+    ],
+    [
+      361,
+      0,
+      24,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      4,
+      0,
+      0
+    ]
+  ],
+  "per_class": {
+    "N": {
+      "support": 44236,
+      "sensitivity": 0.9481643909937607,
+      "positive_predictivity": 0.946644999661453,
+      "precision": 0.946644999661453,
+      "specificity": 0.5663976522377109,
+      "f1": 0.947404086150232
+    },
+    "S": {
+      "support": 1837,
+      "sensitivity": 0.04463799673380512,
+      "positive_predictivity": 0.5324675324675324,
+      "precision": 0.5324675324675324,
+      "specificity": 0.9984953292512173,
+      "f1": 0.08237066800602713
+    },
+    "V": {
+      "support": 3220,
+      "sensitivity": 0.8770186335403727,
+      "positive_predictivity": 0.6826202562243171,
+      "precision": 0.6826202562243171,
+      "specificity": 0.9717439958681243,
+      "f1": 0.7677042272665489
+    },
+    "F": {
+      "support": 388,
+      "sensitivity": 0.007731958762886598,
+      "positive_predictivity": 0.0027522935779816515,
+      "precision": 0.0027522935779816515,
+      "specificity": 0.9779513184584179,
+      "f1": 0.0040595399188092015
+    },
+    "Q": {
+      "support": 7,
+      "sensitivity": 0.0,
+      "positive_predictivity": 0.0,
+      "precision": 0.0,
+      "specificity": 1.0,
+      "f1": 0.0
+    }
+  },
+  "status": "PASS",
+  "target_accuracy_strictly_greater_than": 0.9,
+  "target_status": "PASS",
+  "protocol": "follow-up conventional DS1/DS2; DS2 used in earlier reported experiment, not a new pristine test set",
+  "previous_DS2_results_known": true,
+  "DS2_used_for_this_followup_fit_selection_normalization": false,
+  "records": [
+    "100",
+    "103",
+    "105",
+    "111",
+    "113",
+    "117",
+    "121",
+    "123",
+    "200",
+    "202",
+    "210",
+    "212",
+    "213",
+    "214",
+    "219",
+    "221",
+    "222",
+    "228",
+    "231",
+    "232",
+    "233",
+    "234"
+  ],
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "boundary_exclusions": 24,
+  "uncertainty": {
+    "unit": "record_cluster",
+    "draws": 1000,
+    "accuracy_95_ci": [
+      0.8310419578353488,
+      0.9652697113121905
+    ],
+    "macro_f1_95_ci": [
+      0.3063589161280383,
+      0.4321390727567441
+    ],
+    "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+  },
+  "checkpoint_sha256": "73326930266c3fdd7e3baa01c903b2ba2be54ab3abf2da2ecde63c0bb51f6688",
+  "architecture": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "original_backbone_convolutions": 14,
+    "added_pointwise_convolutions": 1,
+    "head_hidden_channels": 32,
+    "FC_input_channels": 32,
+    "NOPS": 23,
+    "NW": 10248,
+    "NB": 181,
+    "weight_bits": 4,
+    "bias_bits": 16,
+    "input_bits": 8,
+    "auxiliary_features": 16,
+    "auxiliary_RAM_base": 32064,
+    "hidden_RAM_base": 32080,
+    "activation_RAM_used": 32112,
+    "input_memory_tokens_per_vector": 3616,
+    "input_layout": "3600 CWT row-major signed bytes, then16 signed auxiliary feature bytes; loader maps latter to32064..32079",
+    "input_exponent": -3,
+    "hidden_exponent": -4,
+    "weight_exponents": [
+      -3,
+      -3
+    ],
+    "hidden_requant_shift": 2,
+    "logit_exponent": -7,
+    "rounding": "floor(x+0.5), post-ReLU saturation0..127",
+    "host_preprocessing": [
+      "CWT",
+      "causal RR/morphology proxies"
+    ],
+    "baseline_weight_backbone_sha256": "7ee9066c6396f4a83837cc17eecfb5118d03edcc6521911ba4b615816e378a03"
+  },
+  "scope": "quantized fusion software evaluation; RTL replay reported separately",
+  "seconds": 11.53968620300293
+}

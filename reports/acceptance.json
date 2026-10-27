@@ -1,0 +1,170 @@
+[
+  {
+    "check": "Original preservation",
+    "status": "PASS",
+    "result": "Original ZIP, 180-file hash inventory and pre-change backups included.",
+    "evidence": "backups/original_project.zip"
+  },
+  {
+    "check": "Dataset",
+    "status": "PASS",
+    "result": "All 132 publisher-verified files for 44 records parsed; record 119 repaired.",
+    "evidence": "reports/dataset_manifest.json"
+  },
+  {
+    "check": "Preparation",
+    "status": "PASS",
+    "result": "100,679 complete-window beats; 54 boundary exclusions; real ECG training only.",
+    "evidence": "reports/dataset_preparation.json"
+  },
+  {
+    "check": "Training",
+    "status": "PASS",
+    "result": "300 epochs: 30 floating and 270 QAT; 18 DS1 fit and 4 DS1 validation records.",
+    "evidence": "reports/training_execution.json"
+  },
+  {
+    "check": "QAT memorization diagnostic",
+    "status": "PASS",
+    "result": "Ten real DS1 beats memorized; diagnostic accuracy 100%.",
+    "evidence": "reports/real_qat_memorization.json"
+  },
+  {
+    "check": "DS2 evaluation",
+    "status": "PASS",
+    "result": "49,688 beats from all 22 DS2 records; RR and QNN score identical beat identities.",
+    "evidence": "reports/ds2_metrics.json"
+  },
+  {
+    "check": "Accuracy >99.6%",
+    "status": "FAIL",
+    "result": "Observed 69.7553%, macro-F1 0.258583.",
+    "evidence": "reports/ds2_metrics.json"
+  },
+  {
+    "check": "Original golden replay",
+    "status": "PASS",
+    "result": "8/8 exact; all-F predictions reproduce the original initialization.",
+    "evidence": "reports/baseline/qnn.log"
+  },
+  {
+    "check": "Trained RTL replay",
+    "status": "PASS",
+    "result": "10/10 real DS2 vectors: all five signed logits and classes match.",
+    "evidence": "reports/trained_qnn_checked.log"
+  },
+  {
+    "check": "Batched float32 QAT parity",
+    "status": "FAIL",
+    "result": "Numerical deviations observed; frozen inference uses float64 integer emulation.",
+    "evidence": "reports/batched_inference_diagnostic.json"
+  },
+  {
+    "check": "Frozen inference oracle",
+    "status": "PASS",
+    "result": "All 21 operation tensors and batched final logits match on ten real DS2 beats.",
+    "evidence": "experiments/ds2_evaluation/EVALUATED.json"
+  },
+  {
+    "check": "Annotated-beat trace",
+    "status": "PASS",
+    "result": "Record 100, annotation 2, R sample 370 traced through CWT, memory and class N.",
+    "evidence": "reports/beat_trace.json"
+  },
+  {
+    "check": "Legacy frozen streaming replay",
+    "status": "PASS",
+    "result": "267/267 frozen events; a separate detector/tree/small-CNN path.",
+    "evidence": "reports/baseline/streaming_frozen_replay.json"
+  },
+  {
+    "check": "MATLAB/Octave reruns",
+    "status": "BLOCKED",
+    "result": "Runtime unavailable; archived stage logs are not current execution evidence.",
+    "evidence": "sim/verify_current_export.m"
+  },
+  {
+    "check": "Cadence CSV replay",
+    "status": "PASS",
+    "result": "All 1,501 supplied ADC codes and 3,600 legacy map tokens reproduced.",
+    "evidence": "reports/cadence_adapter.json"
+  },
+  {
+    "check": "Trained Cadence RTL replay",
+    "status": "PASS",
+    "result": "1/1 exact signed-logit replay; no classification ground truth for this waveform.",
+    "evidence": "reports/afe_trained_checked.log"
+  },
+  {
+    "check": "Board wrapper simulation",
+    "status": "PASS",
+    "result": "4/4 selections: logits, LEDs and display segments; scan reset repaired.",
+    "evidence": "reports/trained_board_checked.json"
+  },
+  {
+    "check": "Board constraints",
+    "status": "PASS",
+    "result": "All 21 used pin assignments checked against Digilent master constraints.",
+    "evidence": "rtl/basys3/basys3.xdc"
+  },
+  {
+    "check": "Generic xc7 synthesis",
+    "status": "PASS",
+    "result": "Core and board mapped netlists produced; zero static-check problems.",
+    "evidence": "reports/synthesis/trained_board/result.json"
+  },
+  {
+    "check": "Latency conversion",
+    "status": "ESTIMATED",
+    "result": "883,718 simulated cycles imply 8.83718 ms at an assumed achieved 100 MHz.",
+    "evidence": "reports/performance_summary.json"
+  },
+  {
+    "check": "Latency <0.35 ms",
+    "status": "FAIL",
+    "result": "8.83718 ms under the declared 100 MHz assumption; host CWT and acquisition excluded.",
+    "evidence": "reports/PERFORMANCE.md"
+  },
+  {
+    "check": "Vivado implementation/timing",
+    "status": "BLOCKED",
+    "result": "Vivado unavailable; no placement, routing or timing closure result.",
+    "evidence": "fpga/vivado_qcare.tcl"
+  },
+  {
+    "check": "Power/energy <0.07 mJ",
+    "status": "NOT TESTED",
+    "result": "No measured power or energy; no fabricated energy estimate.",
+    "evidence": "reports/PERFORMANCE.md"
+  },
+  {
+    "check": "Programming/physical ADC",
+    "status": "NOT TESTED",
+    "result": "No FPGA programming or physical ADC acquisition executed.",
+    "evidence": "reports/trained_board_checked.json"
+  },
+  {
+    "check": "AFE electrical acceptance",
+    "status": "BLOCKED",
+    "result": "No Spectre runtime or schematic/VM database in the confirmed ZIP; earlier _ocn_ path is absent.",
+    "evidence": "sim/AFE_CADENCE_COSIM.md"
+  },
+  {
+    "check": "Post-synthesis equivalence",
+    "status": "NOT TESTED",
+    "result": "No formal or gate-level functional equivalence run.",
+    "evidence": "reports/PERFORMANCE.md"
+  },
+  {
+    "check": "Provenance guards",
+    "status": "PASS",
+    "result": "132 raw files, four caches and checkpoint provenance checked; changed/missing inputs rejected.",
+    "evidence": "reports/provenance_checks.json"
+  },
+  {
+    "check": "Other research experiments",
+    "status": "NOT TESTED",
+    "result": "No intra-patient retraining, TTA, replacement fusion model or AFE-conditioned DS2 run.",
+    "evidence": "README.md"
+  }
+]

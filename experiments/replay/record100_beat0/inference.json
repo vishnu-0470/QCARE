@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "record": "100",
+  "beat_index": 0,
+  "annotation_index": 2,
+  "R_sample_0based": 370,
+  "annotated_class": "N",
+  "predicted_class": "N",
+  "integer_logits": [
+    148,
+    -559,
+    -618,
+    -470,
+    -429
+  ],
+  "model_sha256": "73326930266c3fdd7e3baa01c903b2ba2be54ab3abf2da2ecde63c0bb51f6688",
+  "independent_integer_oracle": "PASS",
+  "output_directory": "C:\\QCARE_FPGA\\experiments\\replay\\record100_beat0"
+}

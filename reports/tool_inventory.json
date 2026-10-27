@@ -1,0 +1,40 @@
+{
+  "host_os": "darwin",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "cpu_count": 8,
+  "tools": {
+    "matlab": null,
+    "octave": null,
+    "octave-cli": null,
+    "iverilog": "/opt/homebrew/bin/iverilog",
+    "vvp": "/opt/homebrew/bin/vvp",
+    "vivado": null,
+    "yosys": null,
+    "git": "/opt/homebrew/bin/git"
+  },
+  "python_packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "wfdb": "4.3.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "matplotlib": "3.11.2",
+    "yowasp-yosys": "0.70.0.0.post1259",
+    "yowasp-runtime": "1.96",
+    "wasmtime": "47.0.1"
+  },
+  "cuda_available": false,
+  "mps_available": false,
+  "git_repository_in_input": false,
+  "status": "PASS: inventory executed; unavailable tools are BLOCKED for their respective phases",
+  "generic_synthesis_executed": {
+    "status": "PASS",
+    "package": "isolated yowasp-yosys 0.48.0.0.post834",
+    "runtime": "1.96",
+    "wasmtime": "47.0.1",
+    "native_yosys": "unavailable",
+    "initial_global_yowasp_yosys": "0.70.0.0.post1259"
+  }
+}

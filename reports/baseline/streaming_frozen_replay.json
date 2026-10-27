@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "case": "rE",
+  "beats": 267,
+  "expected_beats": 267,
+  "comparison": "existing frozen vector/ROM pair only",
+  "not_5class_QNN": true,
+  "not_accuracy": true
+}

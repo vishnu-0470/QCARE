@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "digital wrapper simulation only; no physical board programming",
+  "switches": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "identities": [
+    {
+      "record": "100",
+      "annotation_index": 2,
+      "R_sample_0based": 370,
+      "label_0based": 0,
+      "class": "N"
+    },
+    {
+      "record": "100",
+      "annotation_index": 3,
+      "R_sample_0based": 662,
+      "label_0based": 0,
+      "class": "N"
+    },
+    {
+      "record": "100",
+      "annotation_index": 8,
+      "R_sample_0based": 2044,
+      "label_0based": 1,
+      "class": "S"
+    },
+    {
+      "record": "100",
+      "annotation_index": 231,
+      "R_sample_0based": 66792,
+      "label_0based": 1,
+      "class": "S"
+    }
+  ],
+  "checks": [
+    "signed logits",
+    "one-hot class LEDs",
+    "class letter",
+    "beat index",
+    "display scan initialized"
+  ],
+  "source_directory": "experiments/ds1_current/board_export"
+}

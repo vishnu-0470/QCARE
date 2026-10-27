@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "classifier": "StandardScaler + class-balanced multinomial logistic regression",
+  "C": 1.0,
+  "max_iter": 1000,
+  "random_state": 26,
+  "features": [
+    "previous_rr_s",
+    "preceding_rr_s",
+    "previous_rr_over_past16_median",
+    "previous_over_preceding_rr",
+    "rr_difference_over_past16_median",
+    "past16_std_over_median"
+  ],
+  "context": "causal past RR intervals; no next-RR or future record normalization",
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "training_beats": 41743,
+  "DS2_not_evaluated": true,
+  "fit_normalizer_on": "DS1 fit partition only",
+  "validation_metrics": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 9248,
+    "accuracy": 0.7841695501730104,
+    "macro_f1": 0.4096693063498861,
+    "macro_f1_present": 0.5120866329373576,
+    "confusion_matrix": [
+      [
+        6767,
+        49,
+        15,
+        545,
+        846
+      ],
+      [
+        17,
+        269,
+        6,
+        178,
+        2
+      ],
+      [
+        102,
+        116,
+        215,
+        83,
+        18
+      ],
+      [
+        13,
+        1,
+        1,
+        1,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 8222,
+        "sensitivity": 0.8230357577231817,
+        "positive_predictivity": 0.9808667922887375,
+        "precision": 0.9808667922887375,
+        "specificity": 0.8713450292397661,
+        "f1": 0.8950466239005357
+      },
+      "S": {
+        "support": 472,
+        "sensitivity": 0.5699152542372882,
+        "positive_predictivity": 0.6183908045977011,
+        "precision": 0.6183908045977011,
+        "specificity": 0.981084776663628,
+        "f1": 0.5931642778390298
+      },
+      "V": {
+        "support": 534,
+        "sensitivity": 0.40262172284644193,
+        "positive_predictivity": 0.9071729957805907,
+        "precision": 0.9071729957805907,
+        "specificity": 0.9974753270599036,
+        "f1": 0.5577172503242541
+      },
+      "F": {
+        "support": 20,
+        "sensitivity": 0.05,
+        "positive_predictivity": 0.0012391573729863693,
+        "precision": 0.0012391573729863693,
+        "specificity": 0.9126571304724751,
+        "f1": 0.0024183796856106408
+      },
+      "Q": {
+        "support": 0,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9059256055363322,
+        "f1": 0.0
+      }
+    }
+  }
+}

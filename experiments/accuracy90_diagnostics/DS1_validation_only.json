@@ -1,0 +1,467 @@
+{
+  "status": "PASS",
+  "DS2_evaluated": false,
+  "scope": "software diagnostics, not claimed as FPGA network results",
+  "metrics": {
+    "logreg_C0.001": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.8588884083044983,
+      "macro_f1": 0.2862765586579759,
+      "macro_f1_present": 0.3578456983224699,
+      "confusion_matrix": [
+        [
+          7731,
+          413,
+          78,
+          0,
+          0
+        ],
+        [
+          467,
+          4,
+          0,
+          1,
+          0
+        ],
+        [
+          325,
+          1,
+          208,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.9402821697883726,
+          "positive_predictivity": 0.9063305978898007,
+          "precision": 0.9063305978898007,
+          "specificity": 0.2212475633528265,
+          "f1": 0.9229942693409742
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.00847457627118644,
+          "positive_predictivity": 0.009569377990430622,
+          "precision": 0.009569377990430622,
+          "specificity": 0.9528258887876025,
+          "f1": 0.008988764044943821
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.3895131086142322,
+          "positive_predictivity": 0.6956521739130435,
+          "precision": 0.6956521739130435,
+          "specificity": 0.989557034656874,
+          "f1": 0.4993997599039615
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9998916341569137,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 1.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "logreg_C0.01": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.8610510380622838,
+      "macro_f1": 0.28633302651866,
+      "macro_f1_present": 0.357916283148325,
+      "confusion_matrix": [
+        [
+          7731,
+          345,
+          143,
+          2,
+          1
+        ],
+        [
+          465,
+          6,
+          0,
+          1,
+          0
+        ],
+        [
+          306,
+          2,
+          226,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          14,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.9402821697883726,
+          "positive_predictivity": 0.9086741889985895,
+          "precision": 0.9086741889985895,
+          "specificity": 0.24269005847953215,
+          "f1": 0.9242080095636581
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.012711864406779662,
+          "positive_predictivity": 0.0169971671388102,
+          "precision": 0.0169971671388102,
+          "specificity": 0.9604603463992707,
+          "f1": 0.014545454545454547
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.4232209737827715,
+          "positive_predictivity": 0.5900783289817232,
+          "precision": 0.5900783289817232,
+          "specificity": 0.9819830158365848,
+          "f1": 0.4929116684841875
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9996749024707412,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9998918685121108,
+          "f1": 0.0
+        }
+      }
+    },
+    "logreg_C0.1": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.863538062283737,
+      "macro_f1": 0.28272377045456565,
+      "macro_f1_present": 0.35340471306820703,
+      "confusion_matrix": [
+        [
+          7744,
+          248,
+          218,
+          10,
+          2
+        ],
+        [
+          463,
+          7,
+          1,
+          1,
+          0
+        ],
+        [
+          294,
+          4,
+          235,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.9418632936025298,
+          "positive_predictivity": 0.9104161768163649,
+          "precision": 0.9104161768163649,
+          "specificity": 0.2573099415204678,
+          "f1": 0.9258727881396461
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.014830508474576272,
+          "positive_predictivity": 0.02702702702702703,
+          "precision": 0.02702702702702703,
+          "specificity": 0.971285323609845,
+          "f1": 0.019151846785225718
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.4400749063670412,
+          "positive_predictivity": 0.5010660980810234,
+          "precision": 0.5010660980810234,
+          "specificity": 0.9731466605462474,
+          "f1": 0.4685942173479562
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9986996098829649,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9997837370242214,
+          "f1": 0.0
+        }
+      }
+    },
+    "logreg_C1.0": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.8618079584775087,
+      "macro_f1": 0.2836462900585652,
+      "macro_f1_present": 0.3545578625732065,
+      "confusion_matrix": [
+        [
+          7726,
+          274,
+          216,
+          2,
+          4
+        ],
+        [
+          461,
+          9,
+          1,
+          1,
+          0
+        ],
+        [
+          290,
+          6,
+          235,
+          2,
+          1
+        ],
+        [
+          5,
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.9396740452444661,
+          "positive_predictivity": 0.9108700778118368,
+          "precision": 0.9108700778118368,
+          "specificity": 0.2631578947368421,
+          "f1": 0.9250478927203065
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.019067796610169493,
+          "positive_predictivity": 0.031141868512110725,
+          "precision": 0.031141868512110725,
+          "specificity": 0.968094804010939,
+          "f1": 0.023653088042049936
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.4400749063670412,
+          "positive_predictivity": 0.5032119914346895,
+          "precision": 0.5032119914346895,
+          "specificity": 0.9733761762680744,
+          "f1": 0.4695304695304695
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9994581707845687,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9994593425605537,
+          "f1": 0.0
+        }
+      }
+    },
+    "HGBT_diagnostic_only": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.9139273356401384,
+      "macro_f1": 0.37011219243523946,
+      "macro_f1_present": 0.46264024054404934,
+      "confusion_matrix": [
+        [
+          8128,
+          1,
+          77,
+          15,
+          1
+        ],
+        [
+          394,
+          75,
+          3,
+          0,
+          0
+        ],
+        [
+          280,
+          4,
+          248,
+          2,
+          0
+        ],
+        [
+          14,
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.9885672585745561,
+          "positive_predictivity": 0.9219600725952813,
+          "precision": 0.9219600725952813,
+          "specificity": 0.32943469785575047,
+          "f1": 0.9541025942011974
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.15889830508474576,
+          "positive_predictivity": 0.9375,
+          "precision": 0.9375,
+          "specificity": 0.9994302643573382,
+          "f1": 0.27173913043478265
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.46441947565543074,
+          "positive_predictivity": 0.7447447447447447,
+          "precision": 0.7447447447447447,
+          "specificity": 0.9902455818223548,
+          "f1": 0.5720876585928489
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.05,
+          "positive_predictivity": 0.05555555555555555,
+          "precision": 0.05555555555555555,
+          "specificity": 0.9981577806675336,
+          "f1": 0.052631578947368425
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9998918685121108,
+          "f1": 0.0
+        }
+      }
+    }
+  }
+}

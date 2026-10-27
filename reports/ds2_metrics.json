@@ -1,0 +1,550 @@
+{
+  "quantized_current_irn": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 49688,
+    "accuracy": 0.6975527290291419,
+    "macro_f1": 0.2585831915750596,
+    "macro_f1_present": 0.2585831915750596,
+    "confusion_matrix": [
+      [
+        31743,
+        2724,
+        7474,
+        339,
+        1956
+      ],
+      [
+        1214,
+        205,
+        356,
+        3,
+        59
+      ],
+      [
+        312,
+        77,
+        2712,
+        14,
+        105
+      ],
+      [
+        302,
+        2,
+        56,
+        0,
+        28
+      ],
+      [
+        1,
+        0,
+        6,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 44236,
+        "sensitivity": 0.7175829641016367,
+        "positive_predictivity": 0.9455200762540212,
+        "precision": 0.9455200762540212,
+        "specificity": 0.6645267791636097,
+        "f1": 0.8159315237507712
+      },
+      "S": {
+        "support": 1837,
+        "sensitivity": 0.1115949918345128,
+        "positive_predictivity": 0.06815159574468085,
+        "precision": 0.06815159574468085,
+        "specificity": 0.9414223318216965,
+        "f1": 0.0846233230134159
+      },
+      "V": {
+        "support": 3220,
+        "sensitivity": 0.8422360248447205,
+        "positive_predictivity": 0.25575254620897775,
+        "precision": 0.25575254620897775,
+        "specificity": 0.8301626926056641,
+        "f1": 0.39236111111111105
+      },
+      "F": {
+        "support": 388,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9927789046653144,
+        "f1": 0.0
+      },
+      "Q": {
+        "support": 7,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9567641553108834,
+        "f1": 0.0
+      }
+    },
+    "quantized_evaluation_arithmetic": "float64 power-of-two arithmetic checked against independent integer oracle",
+    "status": "PASS",
+    "meaning": "executed evaluation, not an accuracy-target pass",
+    "records": [
+      "100",
+      "103",
+      "105",
+      "111",
+      "113",
+      "117",
+      "121",
+      "123",
+      "200",
+      "202",
+      "210",
+      "212",
+      "213",
+      "214",
+      "219",
+      "221",
+      "222",
+      "228",
+      "231",
+      "232",
+      "233",
+      "234"
+    ],
+    "included_records": 22,
+    "included_beats": 49688,
+    "boundary_exclusions": 24,
+    "protocol": "conventional DS1 fit subset / DS1 record-held-out validation / full DS2 test",
+    "same_subject_caveat": "201 DS1 / 202 DS2 are one person; do not describe as strict subject-disjoint",
+    "uncertainty": {
+      "unit": "record_cluster",
+      "draws": 1000,
+      "accuracy_95_ci": [
+        0.5707802215826681,
+        0.8165711172472239
+      ],
+      "macro_f1_95_ci": [
+        0.2032352182954983,
+        0.3146843021037627
+      ],
+      "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+    }
+  },
+  "float_same_latent_parameters": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 49688,
+    "accuracy": 0.6760586056995653,
+    "macro_f1": 0.24923231963158976,
+    "macro_f1_present": 0.24923231963158976,
+    "confusion_matrix": [
+      [
+        30608,
+        769,
+        10315,
+        695,
+        1849
+      ],
+      [
+        1106,
+        157,
+        523,
+        21,
+        30
+      ],
+      [
+        284,
+        46,
+        2826,
+        39,
+        25
+      ],
+      [
+        281,
+        0,
+        104,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        6,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 44236,
+        "sensitivity": 0.6919251288543268,
+        "positive_predictivity": 0.9482032218091697,
+        "precision": 0.9482032218091697,
+        "specificity": 0.6933235509904622,
+        "f1": 0.8000418213184171
+      },
+      "S": {
+        "support": 1837,
+        "sensitivity": 0.085465432770822,
+        "positive_predictivity": 0.16152263374485595,
+        "precision": 0.16152263374485595,
+        "specificity": 0.9829679630519739,
+        "f1": 0.11178355286578853
+      },
+      "V": {
+        "support": 3220,
+        "sensitivity": 0.877639751552795,
+        "positive_predictivity": 0.20516915928561058,
+        "precision": 0.20516915928561058,
+        "specificity": 0.7643970043901179,
+        "f1": 0.3325879722254914
+      },
+      "F": {
+        "support": 388,
+        "sensitivity": 0.002577319587628866,
+        "positive_predictivity": 0.0013227513227513227,
+        "precision": 0.0013227513227513227,
+        "specificity": 0.984685598377282,
+        "f1": 0.001748251748251748
+      },
+      "Q": {
+        "support": 7,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9616352327851694,
+        "f1": 0.0
+      }
+    },
+    "quantized_evaluation_arithmetic": "float32 software",
+    "status": "PASS",
+    "meaning": "executed evaluation, not an accuracy-target pass",
+    "records": [
+      "100",
+      "103",
+      "105",
+      "111",
+      "113",
+      "117",
+      "121",
+      "123",
+      "200",
+      "202",
+      "210",
+      "212",
+      "213",
+      "214",
+      "219",
+      "221",
+      "222",
+      "228",
+      "231",
+      "232",
+      "233",
+      "234"
+    ],
+    "included_records": 22,
+    "included_beats": 49688,
+    "boundary_exclusions": 24,
+    "protocol": "conventional DS1 fit subset / DS1 record-held-out validation / full DS2 test",
+    "same_subject_caveat": "201 DS1 / 202 DS2 are one person; do not describe as strict subject-disjoint",
+    "uncertainty": {
+      "unit": "record_cluster",
+      "draws": 1000,
+      "accuracy_95_ci": [
+        0.5420666585877368,
+        0.7980954981674319
+      ],
+      "macro_f1_95_ci": [
+        0.19388005444339437,
+        0.2979530846308838
+      ],
+      "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+    }
+  },
+  "float_warm_start_checkpoint": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 49688,
+    "accuracy": 0.7291297697633231,
+    "macro_f1": 0.2844253816436105,
+    "macro_f1_present": 0.2844253816436105,
+    "confusion_matrix": [
+      [
+        33235,
+        2734,
+        5881,
+        1812,
+        574
+      ],
+      [
+        971,
+        373,
+        358,
+        124,
+        11
+      ],
+      [
+        343,
+        137,
+        2614,
+        102,
+        24
+      ],
+      [
+        242,
+        15,
+        111,
+        7,
+        13
+      ],
+      [
+        1,
+        2,
+        4,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 44236,
+        "sensitivity": 0.751311149290171,
+        "positive_predictivity": 0.9552483329501035,
+        "precision": 0.9552483329501035,
+        "specificity": 0.7144167278063096,
+        "f1": 0.841094295692666
+      },
+      "S": {
+        "support": 1837,
+        "sensitivity": 0.2030484485574306,
+        "positive_predictivity": 0.11438209138301135,
+        "precision": 0.11438209138301135,
+        "specificity": 0.9396459844099392,
+        "f1": 0.1463318948607297
+      },
+      "V": {
+        "support": 3220,
+        "sensitivity": 0.8118012422360248,
+        "positive_predictivity": 0.29148082069580733,
+        "precision": 0.29148082069580733,
+        "specificity": 0.8632607385727813,
+        "f1": 0.42894650475877916
+      },
+      "F": {
+        "support": 388,
+        "sensitivity": 0.01804123711340206,
+        "positive_predictivity": 0.0034229828850855745,
+        "precision": 0.0034229828850855745,
+        "specificity": 0.9586612576064909,
+        "f1": 0.005754212905877517
+      },
+      "Q": {
+        "support": 7,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.9874801231859263,
+        "f1": 0.0
+      }
+    },
+    "quantized_evaluation_arithmetic": "float32 software",
+    "status": "PASS",
+    "meaning": "executed evaluation, not an accuracy-target pass",
+    "records": [
+      "100",
+      "103",
+      "105",
+      "111",
+      "113",
+      "117",
+      "121",
+      "123",
+      "200",
+      "202",
+      "210",
+      "212",
+      "213",
+      "214",
+      "219",
+      "221",
+      "222",
+      "228",
+      "231",
+      "232",
+      "233",
+      "234"
+    ],
+    "included_records": 22,
+    "included_beats": 49688,
+    "boundary_exclusions": 24,
+    "protocol": "conventional DS1 fit subset / DS1 record-held-out validation / full DS2 test",
+    "same_subject_caveat": "201 DS1 / 202 DS2 are one person; do not describe as strict subject-disjoint",
+    "uncertainty": {
+      "unit": "record_cluster",
+      "draws": 1000,
+      "accuracy_95_ci": [
+        0.6276486736442306,
+        0.8238197600422653
+      ],
+      "macro_f1_95_ci": [
+        0.2253735574287699,
+        0.3350701017488758
+      ],
+      "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+    }
+  },
+  "RR_logistic_baseline": {
+    "class_order": [
+      "N",
+      "S",
+      "V",
+      "F",
+      "Q"
+    ],
+    "samples": 49688,
+    "accuracy": 0.6347810336499758,
+    "macro_f1": 0.2981314591295364,
+    "macro_f1_present": 0.2981314591295364,
+    "confusion_matrix": [
+      [
+        29294,
+        996,
+        1616,
+        4405,
+        7925
+      ],
+      [
+        34,
+        225,
+        480,
+        22,
+        1076
+      ],
+      [
+        111,
+        959,
+        1825,
+        280,
+        45
+      ],
+      [
+        176,
+        4,
+        1,
+        197,
+        10
+      ],
+      [
+        5,
+        1,
+        0,
+        1,
+        0
+      ]
+    ],
+    "per_class": {
+      "N": {
+        "support": 44236,
+        "sensitivity": 0.6622208156252826,
+        "positive_predictivity": 0.9889939230249831,
+        "precision": 0.9889939230249831,
+        "specificity": 0.9402054292002935,
+        "f1": 0.7932733968804159
+      },
+      "S": {
+        "support": 1837,
+        "sensitivity": 0.12248230811105063,
+        "positive_predictivity": 0.10297482837528604,
+        "precision": 0.10297482837528604,
+        "specificity": 0.9590395185053604,
+        "f1": 0.11188463451019394
+      },
+      "V": {
+        "support": 3220,
+        "sensitivity": 0.5667701863354038,
+        "positive_predictivity": 0.46532381438041814,
+        "precision": 0.46532381438041814,
+        "specificity": 0.9548721700955496,
+        "f1": 0.5110613273592831
+      },
+      "F": {
+        "support": 388,
+        "sensitivity": 0.5077319587628866,
+        "positive_predictivity": 0.04016309887869521,
+        "precision": 0.04016309887869521,
+        "specificity": 0.9045030425963488,
+        "f1": 0.07443793689778953
+      },
+      "Q": {
+        "support": 7,
+        "sensitivity": 0.0,
+        "positive_predictivity": 0.0,
+        "precision": 0.0,
+        "specificity": 0.8177170346812664,
+        "f1": 0.0
+      }
+    },
+    "quantized_evaluation_arithmetic": "float64 sklearn StandardScaler/logistic regression",
+    "status": "PASS",
+    "meaning": "executed evaluation, not an accuracy-target pass",
+    "records": [
+      "100",
+      "103",
+      "105",
+      "111",
+      "113",
+      "117",
+      "121",
+      "123",
+      "200",
+      "202",
+      "210",
+      "212",
+      "213",
+      "214",
+      "219",
+      "221",
+      "222",
+      "228",
+      "231",
+      "232",
+      "233",
+      "234"
+    ],
+    "included_records": 22,
+    "included_beats": 49688,
+    "boundary_exclusions": 24,
+    "protocol": "conventional DS1 fit subset / DS1 record-held-out validation / full DS2 test",
+    "same_subject_caveat": "201 DS1 / 202 DS2 are one person; do not describe as strict subject-disjoint",
+    "uncertainty": {
+      "unit": "record_cluster",
+      "draws": 1000,
+      "accuracy_95_ci": [
+        0.5242753927105784,
+        0.7536285035435483
+      ],
+      "macro_f1_95_ci": [
+        0.23892415656285226,
+        0.34397312081877013
+      ],
+      "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+    }
+  }
+}

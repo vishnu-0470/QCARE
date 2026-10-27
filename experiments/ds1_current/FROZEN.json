@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checkpoint": "best_qat.pt",
+  "checkpoint_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5",
+  "selection": "DS1 patient-held-out validation macro-F1 only",
+  "DS2_not_evaluated_by_trainer": true,
+  "completed_epochs": 300,
+  "frozen_before_DS2_evaluation": true
+}

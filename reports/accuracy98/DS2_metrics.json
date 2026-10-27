@@ -1,0 +1,172 @@
+{
+  "class_order": [
+    "N",
+    "S",
+    "V",
+    "F",
+    "Q"
+  ],
+  "samples": 49688,
+  "accuracy": 0.93342456931251,
+  "macro_f1": 0.41095551174929035,
+  "macro_f1_present": 0.41095551174929035,
+  "confusion_matrix": [
+    [
+      43271,
+      69,
+      781,
+      114,
+      1
+    ],
+    [
+      1582,
+      132,
+      122,
+      1,
+      0
+    ],
+    [
+      241,
+      30,
+      2940,
+      9,
+      0
+    ],
+    [
+      306,
+      0,
+      45,
+      37,
+      0
+    ],
+    [
+      4,
+      0,
+      3,
+      0,
+      0
+    ]
+  ],
+  "per_class": {
+    "N": {
+      "support": 44236,
+      "sensitivity": 0.9781851885342255,
+      "positive_predictivity": 0.9530217601973394,
+      "precision": 0.9530217601973394,
+      "specificity": 0.6087674247982392,
+      "f1": 0.9654395359214637
+    },
+    "S": {
+      "support": 1837,
+      "sensitivity": 0.0718562874251497,
+      "positive_predictivity": 0.5714285714285714,
+      "precision": 0.5714285714285714,
+      "specificity": 0.9979310777204238,
+      "f1": 0.1276595744680851
+    },
+    "V": {
+      "support": 3220,
+      "sensitivity": 0.9130434782608695,
+      "positive_predictivity": 0.7555898226676947,
+      "precision": 0.7555898226676947,
+      "specificity": 0.9795343031763795,
+      "f1": 0.8268879201237519
+    },
+    "F": {
+      "support": 388,
+      "sensitivity": 0.09536082474226804,
+      "positive_predictivity": 0.22981366459627328,
+      "precision": 0.22981366459627328,
+      "specificity": 0.9974847870182556,
+      "f1": 0.13479052823315119
+    },
+    "Q": {
+      "support": 7,
+      "sensitivity": 0.0,
+      "positive_predictivity": 0.0,
+      "precision": 0.0,
+      "specificity": 0.9999798715806848,
+      "f1": 0.0
+    }
+  },
+  "status": "PASS",
+  "meaning": "evaluation executed; target separately assessed",
+  "target_accuracy": 0.98,
+  "target_status": "FAIL",
+  "model_family": "software HistGradientBoosting/forest selection; not a quantized FPGA network",
+  "selected_model": {
+    "folder": "accuracy98_software",
+    "checkpoint": "selected.joblib",
+    "sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+    "validation_accuracy": 0.9257136678200693,
+    "validation_macro_f1": 0.3957079433808987
+  },
+  "DS2_records": [
+    "100",
+    "103",
+    "105",
+    "111",
+    "113",
+    "117",
+    "121",
+    "123",
+    "200",
+    "202",
+    "210",
+    "212",
+    "213",
+    "214",
+    "219",
+    "221",
+    "222",
+    "228",
+    "231",
+    "232",
+    "233",
+    "234"
+  ],
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "test_beats": 49688,
+  "boundary_exclusions": 24,
+  "previous_DS2_results_known": true,
+  "DS2_used_for_followup_fitting_or_selection": false,
+  "uncertainty": {
+    "unit": "record_cluster",
+    "draws": 1000,
+    "accuracy_95_ci": [
+      0.8783145306951898,
+      0.9774718905767695
+    ],
+    "macro_f1_95_ci": [
+      0.3524461395196795,
+      0.46581267035568374
+    ],
+    "note": "DS2 contains 202 only; 201 is a conventional DS1 shared-subject caveat, not a duplicate within DS2"
+  },
+  "seconds": 20.484184980392456
+}

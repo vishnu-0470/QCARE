@@ -1,0 +1,296 @@
+{
+  "status": "PASS",
+  "selected": {
+    "candidate": 1,
+    "type": "RandomForestClassifier",
+    "metrics": {
+      "class_order": [
+        "N",
+        "S",
+        "V",
+        "F",
+        "Q"
+      ],
+      "samples": 9248,
+      "accuracy": 0.9192257785467128,
+      "macro_f1": 0.3614003710721863,
+      "macro_f1_present": 0.4517504638402329,
+      "confusion_matrix": [
+        [
+          8200,
+          6,
+          15,
+          1,
+          0
+        ],
+        [
+          387,
+          84,
+          1,
+          0,
+          0
+        ],
+        [
+          292,
+          16,
+          217,
+          9,
+          0
+        ],
+        [
+          9,
+          0,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "N": {
+          "support": 8222,
+          "sensitivity": 0.997324252006811,
+          "positive_predictivity": 0.9225922592259226,
+          "precision": 0.9225922592259226,
+          "specificity": 0.32943469785575047,
+          "f1": 0.9585037989479835
+        },
+        "S": {
+          "support": 472,
+          "sensitivity": 0.17796610169491525,
+          "positive_predictivity": 0.7924528301886793,
+          "precision": 0.7924528301886793,
+          "specificity": 0.9974931631722881,
+          "f1": 0.2906574394463668
+        },
+        "V": {
+          "support": 534,
+          "sensitivity": 0.40636704119850187,
+          "positive_predictivity": 0.889344262295082,
+          "precision": 0.889344262295082,
+          "specificity": 0.9969015377553362,
+          "f1": 0.557840616966581
+        },
+        "F": {
+          "support": 20,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 0.9989163415691374,
+          "f1": 0.0
+        },
+        "Q": {
+          "support": 0,
+          "sensitivity": 0.0,
+          "positive_predictivity": 0.0,
+          "precision": 0.0,
+          "specificity": 1.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "seconds": 82.0762951374054
+  },
+  "candidates": [
+    {
+      "candidate": 0,
+      "type": "ExtraTreesClassifier",
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.9107915224913494,
+        "macro_f1": 0.3130745230337499,
+        "macro_f1_present": 0.39134315379218737,
+        "confusion_matrix": [
+          [
+            8192,
+            8,
+            18,
+            4,
+            0
+          ],
+          [
+            456,
+            14,
+            1,
+            1,
+            0
+          ],
+          [
+            309,
+            2,
+            217,
+            6,
+            0
+          ],
+          [
+            9,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.9963512527365604,
+            "positive_predictivity": 0.9136738790988178,
+            "precision": 0.9136738790988178,
+            "specificity": 0.24561403508771928,
+            "f1": 0.9532231789620667
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.029661016949152543,
+            "positive_predictivity": 0.5833333333333334,
+            "precision": 0.5833333333333334,
+            "specificity": 0.9988605287146763,
+            "f1": 0.0564516129032258
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.40636704119850187,
+            "positive_predictivity": 0.8785425101214575,
+            "precision": 0.8785425101214575,
+            "specificity": 0.9965572641725958,
+            "f1": 0.5556978233034571
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9988079757260512,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "seconds": 40.55928587913513
+    },
+    {
+      "candidate": 1,
+      "type": "RandomForestClassifier",
+      "metrics": {
+        "class_order": [
+          "N",
+          "S",
+          "V",
+          "F",
+          "Q"
+        ],
+        "samples": 9248,
+        "accuracy": 0.9192257785467128,
+        "macro_f1": 0.3614003710721863,
+        "macro_f1_present": 0.4517504638402329,
+        "confusion_matrix": [
+          [
+            8200,
+            6,
+            15,
+            1,
+            0
+          ],
+          [
+            387,
+            84,
+            1,
+            0,
+            0
+          ],
+          [
+            292,
+            16,
+            217,
+            9,
+            0
+          ],
+          [
+            9,
+            0,
+            11,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class": {
+          "N": {
+            "support": 8222,
+            "sensitivity": 0.997324252006811,
+            "positive_predictivity": 0.9225922592259226,
+            "precision": 0.9225922592259226,
+            "specificity": 0.32943469785575047,
+            "f1": 0.9585037989479835
+          },
+          "S": {
+            "support": 472,
+            "sensitivity": 0.17796610169491525,
+            "positive_predictivity": 0.7924528301886793,
+            "precision": 0.7924528301886793,
+            "specificity": 0.9974931631722881,
+            "f1": 0.2906574394463668
+          },
+          "V": {
+            "support": 534,
+            "sensitivity": 0.40636704119850187,
+            "positive_predictivity": 0.889344262295082,
+            "precision": 0.889344262295082,
+            "specificity": 0.9969015377553362,
+            "f1": 0.557840616966581
+          },
+          "F": {
+            "support": 20,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 0.9989163415691374,
+            "f1": 0.0
+          },
+          "Q": {
+            "support": 0,
+            "sensitivity": 0.0,
+            "positive_predictivity": 0.0,
+            "precision": 0.0,
+            "specificity": 1.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "seconds": 82.0762951374054
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Local MATLAB preference stores (may contain private settings and keys)
+.matlab_pref/
+.matlab_pref_retry/
+.matlab_pref_*/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated simulator output and logs
+*.vvp
+*.log
+reports/vivado_xsim/
+reports/synthesis/**/netlist.json
+reports/synthesis/**/netlist.edif
+
+# Local run snapshots with machine-specific paths
+reports/guard_rejections.json
+reports/LATEST_RESULTS.json
+reports/performance_summary.json
+reports/synthesis/board_report_parser_failure.json
+reports/synthesis/report_path_failure/
+reports/synthesis/**/run.ys
+

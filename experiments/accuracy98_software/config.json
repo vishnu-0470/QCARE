@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "method": "software HistGradientBoosting on original frozen GAP16, causal morphology16, past-RR16, normalized real waveform80 and causal template residual80",
+  "features": 208,
+  "candidates": [
+    {
+      "max_leaf_nodes": 31,
+      "max_depth": 8,
+      "min_samples_leaf": 30,
+      "l2_regularization": 10.0,
+      "class_weight_exponent": 0.0
+    },
+    {
+      "max_leaf_nodes": 15,
+      "max_depth": 6,
+      "min_samples_leaf": 60,
+      "l2_regularization": 20.0,
+      "class_weight_exponent": 0.25
+    }
+  ],
+  "max_iter": 240,
+  "learning_rate": 0.06,
+  "random_state": 526,
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "DS2_used_for_fit_or_selection": false,
+  "previous_DS2_results_known": true,
+  "selection": "highest DS1 validation accuracy; ties by macroF1",
+  "data": "real ECG only; no synthetic ECG",
+  "context": "past32 RR and past16 waveform templates; no nextRR, future record normalization or patient ID feature",
+  "hardware_status": "software diagnostic only; not exported to 4W/8A RTL",
+  "target_accuracy": 0.98,
+  "baseline_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5"
+}

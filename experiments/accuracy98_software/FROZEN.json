@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checkpoint": "selected.joblib",
+  "sha256": "44ed6fdb87fa652a9f03cedebdf8f4fd1b34ef1a6d605a27335db54532ea3779",
+  "DS1_only_selection": true,
+  "previous_DS2_results_known": true,
+  "DS2_not_evaluated_in_this_experiment": true
+}

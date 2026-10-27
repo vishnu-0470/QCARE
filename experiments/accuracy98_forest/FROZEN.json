@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checkpoint": "candidate1.joblib",
+  "sha256": "c237a59b4519265c248b7298cd8c61a96b9a57894042c479517c31e89875ce6a",
+  "DS1_only_selection": true,
+  "previous_DS2_results_known": true
+}

@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "method": "refit only existing FC5x16; frozen original 4W/8A backbone and CWT",
+  "fit_records": [
+    "101",
+    "106",
+    "109",
+    "112",
+    "115",
+    "116",
+    "118",
+    "119",
+    "122",
+    "124",
+    "201",
+    "203",
+    "205",
+    "207",
+    "208",
+    "215",
+    "220",
+    "230"
+  ],
+  "validation_records": [
+    "108",
+    "114",
+    "209",
+    "223"
+  ],
+  "DS2_used_in_selection": false,
+  "previous_DS2_results_known": true,
+  "seed": 126,
+  "class_weight_exponent_grid": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "epochs_per_candidate": 240,
+  "float_head_epochs": 60,
+  "QAT_head_epochs": 180,
+  "batch_size": 1024,
+  "optimizer": "AdamW",
+  "float_initial_LR": 0.03,
+  "QAT_initial_LR": 0.005,
+  "weight_decay": 0.01,
+  "loss": "weighted cross-entropy with label_smoothing .02",
+  "selection": "prefer validation accuracy>90% and macro-F1>=0.30; among eligible maximize macro-F1 then accuracy; otherwise maximize accuracy then macro-F1",
+  "baseline_sha256": "311e9af2537cbad16e9539c80cb2f2a8804d80dd5421f141c2502af563705be5",
+  "real_training_only": true,
+  "architecture_unchanged": true,
+  "input_exponent": -3,
+  "dataset_manifest_sha256": "2c9deedef0c1a42490e972d4f393969afe50d4c81d67419a11252b0984a2a119"
+}
