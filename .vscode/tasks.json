@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Q-CARE: Show saved metrics",
+      "type": "process",
+      "command": "python",
+      "args": ["python/show_latest_results.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Q-CARE: Fusion inference demo",
+      "type": "process",
+      "command": "python",
+      "args": ["python/infer_record_fusion90.py", "--record", "100", "--beat-index", "0"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Q-CARE: Software inference demo",
+      "type": "process",
+      "command": "python",
+      "args": ["python/infer_record_software.py", "--record", "100", "--beat-index", "0"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

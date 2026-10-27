@@ -11,7 +11,7 @@ function [adc, info] = afe_twin(ecg_mv, p)
 %   servo time constant while the output is clipped).
 %
 %   IMPORTANT: every default below is a placeholder until it is calibrated
-%   against Spectre with sim/validate_afe_twin.m (small-signal AC, a linear
+%   against Spectre (small-signal AC, a linear
 %   10 Hz transient, an offset step and a noise run). The rails default to
 %   the min/max of the overdriven transient in clean_out.csv.
 if nargin < 2, p = struct(); end

@@ -1,7 +1,7 @@
 function export_rtl(model, cfg, out_dir)
-% EXPORT_RTL  Write rtl/gen/params.vh, wrom.mem and tree.mem from the SAME
+% EXPORT_RTL  Write xilinx/rtl/gen/params.vh, wrom.mem and tree.mem from the SAME
 %   cfg and model the golden model uses, so MATLAB and RTL cannot drift.
-if nargin < 3, out_dir = fullfile(fileparts(mfilename('fullpath')), '..', 'rtl', 'gen'); end
+if nargin < 3, out_dir = fullfile(fileparts(mfilename('fullpath')), '..', 'xilinx', 'rtl', 'gen'); end
 if ~exist(out_dir, 'dir'), mkdir(out_dir); end
 d = cfg.det; e = cfg.eng; c = model.cnn; r = cfg.rom;
 % ---------------- params.vh ----------------

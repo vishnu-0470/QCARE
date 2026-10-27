@@ -5,7 +5,7 @@ function [beats, raws, ev_c] = run_stream_golden(adc, cfg, model, opts)
 %   successor appears within cfg.eng.wait samples, with rr_post = rr_max.
 %   R-R intervals saturate at cfg.eng.rr_max.  Beats whose 360-sample
 %   window does not fit in the stream are not processed - exactly the
-%   behaviour of rtl/ecg_afe_accel_top.v.
+%   behaviour of xilinx/rtl/ecg_afe_accel_top.v.
 if nargin < 4, opts = struct(); end
 ev_c = qrs_detect_golden(adc, cfg);
 N = numel(adc); st = st_init(); prev_c = []; k_out = 0; e = cfg.eng;

@@ -5,7 +5,8 @@
 - **PASS:** generic fusion-board synthesis; no physical timing/power claim.
 - **PASS:** stronger software experiment evaluated: 93.3425%, macro-F1 0.410956.
 - **FAIL:** >98% accuracy target.
-- **NOT TESTED/BLOCKED:** physical FPGA/ADC/AFE, Vivado timing and MATLAB/Spectre reruns.
+- **NOT TESTED/BLOCKED:** physical FPGA/ADC/AFE, Vivado timing, original MATLAB stage tests, and Spectre.
+- **PASS:** MATLAB frozen-export replay for ten reference vectors (the older QNN path).
 
 Use [RUN_GUIDE.md](RUN_GUIDE.md) and [latest report](reports/LATEST_REPORT.md).
 All following baseline results remain preserved and refer to the earlier model.
@@ -31,18 +32,18 @@ All following baseline results remain preserved and refer to the earlier model.
 | Frozen inference oracle | **PASS** | All 21 operation tensors and batched final logits match on ten real DS2 beats. [experiments/ds2_evaluation/EVALUATED.json](experiments/ds2_evaluation/EVALUATED.json) |
 | Annotated-beat trace | **PASS** | Record 100, annotation 2, R sample 370 traced through CWT, memory and class N. [reports/beat_trace.json](reports/beat_trace.json) |
 | Legacy frozen streaming replay | **PASS** | 267/267 frozen events; a separate detector/tree/small-CNN path. [reports/baseline/streaming_frozen_replay.json](reports/baseline/streaming_frozen_replay.json) |
-| MATLAB/Octave reruns | **BLOCKED** | Runtime unavailable; archived stage logs are not current execution evidence. [sim/verify_current_export.m](sim/verify_current_export.m) |
+| MATLAB frozen-export replay | **PASS** | User ran the Windows replay; ten classes/logits and exported memory order matched. This covers the older QNN path. [matlab/sim/verify_current_export.m](matlab/sim/verify_current_export.m) |
 | Cadence CSV replay | **PASS** | All 1,501 supplied ADC codes and 3,600 legacy map tokens reproduced. [reports/cadence_adapter.json](reports/cadence_adapter.json) |
 | Trained Cadence RTL replay | **PASS** | 1/1 exact signed-logit replay; no classification ground truth for this waveform. [reports/afe_trained_checked.log](reports/afe_trained_checked.log) |
 | Board wrapper simulation | **PASS** | 4/4 selections: logits, LEDs and display segments; scan reset repaired. [reports/trained_board_checked.json](reports/trained_board_checked.json) |
-| Board constraints | **PASS** | All 21 used pin assignments checked against Digilent master constraints. [rtl/basys3/basys3.xdc](rtl/basys3/basys3.xdc) |
+| Board constraints | **PASS** | All 21 used pin assignments checked against Digilent master constraints. [xilinx/rtl/basys3/basys3.xdc](xilinx/rtl/basys3/basys3.xdc) |
 | Generic xc7 synthesis | **PASS** | Core and board mapped netlists produced; zero static-check problems. [reports/synthesis/trained_board/result.json](reports/synthesis/trained_board/result.json) |
 | Latency conversion | **ESTIMATED** | 883,718 simulated cycles imply 8.83718 ms at an assumed achieved 100 MHz. [reports/performance_summary.json](reports/performance_summary.json) |
 | Latency <0.35 ms | **FAIL** | 8.83718 ms under the declared 100 MHz assumption; host CWT and acquisition excluded. [reports/PERFORMANCE.md](reports/PERFORMANCE.md) |
-| Vivado implementation/timing | **BLOCKED** | Vivado unavailable; no placement, routing or timing closure result. [fpga/vivado_qcare.tcl](fpga/vivado_qcare.tcl) |
+| Vivado implementation/timing | **BLOCKED** | Vivado unavailable; no placement, routing or timing closure result. [xilinx/fpga/vivado_qcare.tcl](xilinx/fpga/vivado_qcare.tcl) |
 | Power/energy <0.07 mJ | **NOT TESTED** | No measured power or energy; no fabricated energy estimate. [reports/PERFORMANCE.md](reports/PERFORMANCE.md) |
 | Programming/physical ADC | **NOT TESTED** | No FPGA programming or physical ADC acquisition executed. [reports/trained_board_checked.json](reports/trained_board_checked.json) |
-| AFE electrical acceptance | **BLOCKED** | No Spectre runtime or schematic/VM database in the confirmed ZIP; earlier _ocn_ path is absent. [sim/AFE_CADENCE_COSIM.md](sim/AFE_CADENCE_COSIM.md) |
+| AFE electrical acceptance | **BLOCKED** | No Spectre runtime or schematic/VM database in the confirmed ZIP; earlier _ocn_ path is absent. [xilinx/sim/AFE_CADENCE_COSIM.md](xilinx/sim/AFE_CADENCE_COSIM.md) |
 | Post-synthesis equivalence | **NOT TESTED** | No formal or gate-level functional equivalence run. [reports/PERFORMANCE.md](reports/PERFORMANCE.md) |
 | Provenance guards | **PASS** | 132 raw files, four caches and checkpoint provenance checked; changed/missing inputs rejected. [reports/provenance_checks.json](reports/provenance_checks.json) |
 | Other research experiments | **NOT TESTED** | No intra-patient retraining, TTA, replacement fusion model or AFE-conditioned DS2 run. [README.md](README.md) |

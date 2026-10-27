@@ -2,9 +2,9 @@ function info = qnn_export(Qm, qmaps, outdir)
 % QNN_EXPORT  Write the hardware program, weight/bias ROMs and golden vectors.
 %   Qm     : integer model from qat_build
 %   qmaps  : [N x 1 x 60 x 60] integer input maps for golden vectors
-%   outdir : rtl/qnn  (files go to outdir/gen and outdir/vec)
+%   outdir : xilinx/rtl/qnn  (files go to outdir/gen and outdir/vec)
 %
-%   Program = list of ops, each NF=18 16-bit words (see rtl/qnn/qnn_engine.v):
+%   Program = list of ops, each NF=18 16-bit words (see xilinx/rtl/qnn/qnn_engine.v):
 %     0 op  1 src  2 src2  3 dst  4 ci  5 co  6 H  7 W  8 Ho  9 Wo
 %    10 k  11 s  12 p  13 wbase  14 bbase  15 shift  16 srcA  17 half
 %   Op codes: 1 CONV, 2 POOL, 3 ADDCAT, 4 GAP, 5 FC, 0 END.

@@ -18,6 +18,24 @@ The earlier audit below remains preserved as historical baseline documentation.
 
 This project contains the Q-CARE ECG classification sources, frozen model artifacts, MIT-BIH input records, RTL simulations, and engineering reports. `backups/original_project.zip` preserves the original supplied project archive; the other backup folders preserve selected pre-repair and pre-release files.
 
+## Project layout
+
+| Folder | Contents |
+|---|---|
+| `matlab/` | MATLAB model, training, quantization, and replay scripts (including `matlab/sim/`) |
+| `python/` | Python inference, dataset, evaluation, and report scripts |
+| `xilinx/fpga/` | Vivado implementation and XSim Tcl flows |
+| `xilinx/rtl/` | Verilog hardware, constraints, and memory images |
+| `xilinx/sim/` | Verilog testbenches and Xilinx simulation support |
+| `data/` | MIT-BIH records and waveform/ADC CSV inputs |
+| `experiments/` | Frozen checkpoints, exported models, and replay results |
+| `reports/` | Metrics, plots, and engineering reports |
+| `.vscode/` | VS Code tasks for running the Python results and demos |
+
+Open this folder in VS Code, then choose **Terminal → Run Task** to launch the
+saved-results summary or either Python inference demo. See [RUN_GUIDE.md](RUN_GUIDE.md)
+for MATLAB and Vivado steps.
+
 **The requested >99.6% accuracy was not achieved.** The frozen current quantized network obtained **69.7553% accuracy and 0.258583 macro-F1** on 49,688 annotated beats from all 22 conventional DS2 records. These are beat-classification results. Physical FPGA operation and AFE electrical performance are not established.
 
 | Held-out DS2 method | Accuracy | Macro-F1 | Evaluation status |
@@ -41,7 +59,7 @@ MIT-BIH annotation + ECG → 360-sample beat → host CWT → 60×60 signed-int8
 
 `python/qcare/model.py` ports the existing MATLAB architecture: downsampling convolution, IRN1, IRN2, max pool, downsampling convolution, IRN3, IRN4, global average pool, FC5. It contains **14 convolutions, four IRN blocks, 9,144 weights and 149 biases**. This continuation does not replace it with the paper's six-layer architecture. CWT is computed on the host. The QNN RTL is a microcoded layer-at-a-time executor, not a complete sample-to-class streaming CWT implementation.
 
-`rtl/ecg_afe_accel_top.v` is a separate legacy detector/quality-gate/feature/tree/small-CNN path with a two-bit class interface. Its frozen regression is retained, but it is not the five-class CWT/IRN model. `train_all.m` does not train the current QNN. `rtl/basys3/basys3_qnn_top.v` demonstrates four stored maps; it has no physical ADC input connection.
+`xilinx/rtl/ecg_afe_accel_top.v` is a separate legacy detector/quality-gate/feature/tree/small-CNN path with a two-bit class interface. Its frozen regression is retained, but it is not the five-class CWT/IRN model. `matlab/train_all.m` does not train the current QNN. `xilinx/rtl/basys3/basys3_qnn_top.v` demonstrates four stored maps; it has no physical ADC input connection.
 
 ## Data and frozen experiment
 
@@ -106,11 +124,11 @@ The evaluator requires a valid frozen-checkpoint hash and refuses to run if the 
 
 Weights are signed four-bit values stored in 16-bit ROM words. Biases remain signed **16-bit accumulator-scale** values, matching the existing RTL. Inputs are signed eight-bit; post-ReLU intermediate activations are restricted to `[0,127]`. Accumulation is signed 32-bit, final logits are signed 24-bit, and ties select the first class. Shift requantization rounds with `floor(x+0.5)` before saturation.
 
-The repaired instruction ROM uses a companion `qnn_prog.mem.wide`: each 288-bit line packs the same eighteen 16-bit fields, with opcode in the least-significant field. Keep this file with `qnn_prog.mem`, `qnn_w.mem` and `qnn_b.mem`. Both Python and MATLAB exporters generate it. Original golden files and original weights remain under `rtl/qnn/`; trained files are under `experiments/ds1_current/export/`.
+The repaired instruction ROM uses a companion `qnn_prog.mem.wide`: each 288-bit line packs the same eighteen 16-bit fields, with opcode in the least-significant field. Keep this file with `qnn_prog.mem`, `qnn_w.mem` and `qnn_b.mem`. Both Python and MATLAB exporters generate it. Original golden files and original weights remain under `xilinx/rtl/qnn/`; trained files are under `experiments/ds1_current/export/`.
 
 The checked testbench reports **883,718 engine cycles**. At a hypothetical achieved 100 MHz this is **8.83718 ms** engine latency, exceeding the 0.35 ms target; this clock-to-time conversion is ESTIMATED, not a measured post-route or board result. It excludes host CWT, input acquisition and input loading. Power and energy targets remain NOT TESTED. Consult `STATUS.md` and synthesis reports for the final synthesis outcome; partial tool output alone is not a complete resource or timing result.
 
-MATLAB/Octave, Vivado and Cadence/Spectre were unavailable on this host. Original MATLAB stage tests, post-route timing, bitstream generation, FPGA programming, physical ADC acquisition and AFE electrical acceptance remain BLOCKED or NOT TESTED as individually recorded. The supplied ZIP contained waveform exports but no Cadence schematic database or VMware project to rerun.
+MATLAB, Vivado and Cadence/Spectre were unavailable during the original authoring run. The frozen MATLAB export replay was later run successfully on Windows for ten reference vectors. The other original MATLAB stage tests, post-route timing, bitstream generation, FPGA programming, physical ADC acquisition and AFE electrical acceptance remain BLOCKED or NOT TESTED as individually recorded.
 
 ## Sources and attribution
 
@@ -130,16 +148,18 @@ inputs and accidental writes over frozen evidence. These guards were added
 after the recorded run and checked without retraining or reevaluating DS2.
 
 Completed generic synthesis used the isolated release pinned in
-`fpga/requirements-yosys.txt`. Install it in a separate virtual environment,
+`xilinx/fpga/requirements-yosys.txt`. Install it in a separate virtual environment,
 then run `python python/synthesize.py --yosys <path-to-yowasp-yosys>` and repeat
 with `--board`. The resulting structured reports and internal `-l` logs are
 required; a successful process exit alone is insufficient. Actual mapped
 wrapper counts are 2,592 LUT primitives, 737 FFs, 20 RAMB36, 7 RAMB18 and 24 DSPs.
 `python python/performance_summary.py` regenerates the summary from saved
 synthesis and simulation evidence. The Vivado Tcl flow in
-`fpga/vivado_qcare.tcl` is provided for the target `xc7a35tcpg236-1` and was
+`xilinx/fpga/vivado_qcare.tcl` is provided for the target `xc7a35tcpg236-1` and was
 NOT TESTED here. It does not program a board.
 
-For MATLAB, use `addpath('sim'); verify_current_export` to compare the frozen
-`.mat` state, ten real golden vectors and reexported ROM ordering. This replay
-is BLOCKED on the authoring host because MATLAB/Octave is unavailable.
+For MATLAB, open the project root, then run
+`addpath(genpath(fullfile(pwd,'matlab'))); verify_current_export`. This compares
+the frozen `.mat` state, ten real golden vectors and re-exported ROM ordering.
+The Windows replay passed; it verifies the older CWT-only model, not the newer
+fusion network.

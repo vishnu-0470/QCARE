@@ -5,7 +5,7 @@ function R = train_all(opts)
 %   (2) iteration 1 with teacher-forced references, (3) iteration 2 with the
 %   closed-loop references of the iteration-1 model, (4) tree + tau calibration
 %   on held-out DS1 patients, (5) QAT CNN, (6) evaluation on DS2 for
-%   {full, tree-only, CNN-only}, (7) export to rtl/gen and RTL regression vectors.
+%   {full, tree-only, CNN-only}, (7) export to xilinx/rtl/gen and RTL regression vectors.
 %   opts: data_dir, results_dir, feat_mode ('rel'|'abs'), n_iter, epochs,
 %         afe, ds1_ids, ds2_ids, val_ids, records_override (cell of rec structs),
 %         export (true), tag.
@@ -63,7 +63,7 @@ save(fullfile(opts.results_dir, ['results_' opts.tag '.mat']), 'R');
 % ---------------- (7) export ----------------
 if opts.export && strcmp(opts.feat_mode, 'rel')
     export_rtl(model, cfg);
-    fprintf('\nexported trained model to rtl/gen (params.vh, wrom.mem, tree.mem)\n');
+    fprintf('\nexported trained model to xilinx/rtl/gen (params.vh, wrom.mem, tree.mem)\n');
 end
 end
 

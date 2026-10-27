@@ -7,7 +7,7 @@ if not exe:
  candidate=Path(sys.executable).with_name('yowasp-yosys');exe=str(candidate) if candidate.exists() else None
 if not exe:raise SystemExit('BLOCKED: install yosys or yowasp-yosys and pass --yosys')
 name='trained_board' if a.board else 'trained_core';out=r/'reports/synthesis'/name;out.mkdir(exist_ok=True,parents=True)
-cwd=r/'experiments/ds1_current'/('board_export' if a.board else 'export');top='basys3_qnn_top' if a.board else 'qnn_engine';sources=[r/'rtl/qnn/qnn_engine.v']+([r/'rtl/basys3/basys3_qnn_top.v'] if a.board else [])
+cwd=r/'experiments/ds1_current'/('board_export' if a.board else 'export');top='basys3_qnn_top' if a.board else 'qnn_engine';sources=[r/'xilinx/rtl/qnn/qnn_engine.v']+([r/'xilinx/rtl/basys3/basys3_qnn_top.v'] if a.board else [])
 outrel=Path(os.path.relpath(out,cwd)).as_posix()
 quote=lambda v:'"'+str(v).replace('\\','/').replace('"','\\"')+'"'
 script='read_verilog '+' '.join(map(quote,sources))+'\n'

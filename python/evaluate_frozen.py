@@ -23,7 +23,7 @@ float_latent=copy.deepcopy(model);float_latent.qat=False
 model=model.double()
 prep=verify_prepared(root);verify_checkpoint_preparation(ck,prep);data=dict(np.load(cache/'beats.npz'));maps=np.load(cache/'maps.npy',mmap_mode='r');test=np.flatnonzero(np.isin(data['record'],prep['DS2']));labels=data['label'][test]
 if set(data['record'][test])!=set(prep['DS2']):raise ValueError('Incomplete DS2')
-# Export only the pre-frozen checkpoint, leaving original rtl/qnn/gen untouched.
+# Export only the pre-frozen checkpoint, leaving original xilinx/rtl/qnn/gen untouched.
 export=run/'export';ops,w,b=export_model(model,export)
 selected=[]
 for c in range(5):selected.extend(test[labels==c][:2].tolist())

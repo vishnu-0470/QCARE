@@ -12,7 +12,7 @@ checked benches without Icarus.
 
    ```tcl
    cd C:/QCARE_FPGA
-   source fpga/vivado_xsim_fusion90.tcl
+   source xilinx/fpga/vivado_xsim_fusion90.tcl
    ```
 
 The script runs ten fusion-engine vectors and four stored-map board-wrapper
@@ -37,10 +37,36 @@ model, and writes the prediction and input map. It does not retrain anything.
 On macOS/Linux, `./run.sh` provides equivalent shortcuts when the documented
 `.venv` is installed. `RUN_ALL.command` is a macOS launcher.
 
-The MATLAB replay `addpath(genpath(fullfile(pwd,'matlab'))); addpath(fullfile(pwd,'sim')); verify_current_export`
-was also run successfully on the Windows workstation: exact logits, classes,
-and exported ROM ordering matched for all ten frozen vectors. It verifies the
-older `ds1_current` QNN export, not the newer fusion network.
+In VS Code, select **Terminal → Run Task**, then choose **Q-CARE: Show saved
+metrics**, **Q-CARE: Fusion inference demo**, or **Q-CARE: Software inference
+demo** to see each command's output in the integrated terminal. Python source
+stays grouped in `python/`; `.vscode/tasks.json` stores these editor run tasks.
+
+## Run the MATLAB replay
+
+Open MATLAB with `C:\QCARE_FPGA` as the current folder, then run:
+
+```matlab
+addpath(genpath(fullfile(pwd,'matlab')));
+verify_current_export
+```
+
+The replay was run successfully on this Windows workstation: exact logits,
+classes, and exported ROM ordering matched for all ten frozen vectors. It
+verifies the older `ds1_current` QNN export, not the newer fusion network.
+
+To run the CWT stage checks from the MATLAB Command Window, use:
+
+```matlab
+run(fullfile('matlab','sim','t_stage1.m'))
+```
+
+It prints each check as `PASS` or `FAIL` and saves the inspected beat and CWT
+map under `experiments/matlab_stage1/`. The network and quantization experiments
+are separate scripts (`t_stage2.m` and `t_stage3.m`); run them individually.
+The script list and outputs are described in [matlab/README.md](matlab/README.md).
+
+## Reported follow-up results
 
 The measured follow-up results are **90.2673% accuracy / 0.360308 macro-F1** for
 the 4W/8A fusion network, and **93.3425% / 0.410956** for the separate software
@@ -104,7 +130,7 @@ brew install icarus-verilog
 
 Generic synthesis used YoWASP Yosys 0.48 with the supplied runtime. The local
 `tools/yosys_stable` package is used by `./run.sh synth` when present. For a fresh
-environment, install `fpga/requirements-yosys.txt`. These are generic mapped
+environment, install `xilinx/fpga/requirements-yosys.txt`. These are generic mapped
 counts, not Vivado timing or physical measurements.
 
 ## Data preparation and model reproduction
@@ -163,21 +189,21 @@ reports remain intact and should not be confused with the improved model.
 
 ## FPGA, MATLAB and Cadence
 
-- Fusion engine: `rtl/qnn/qnn_engine.v`, configured with NOPS=23, NW=10248, NB=181.
-- Fusion board wrapper: `rtl/basys3/basys3_qnn_fusion_top.v`.
-- Checked benches: `sim/tb_qnn_fusion_checked.v`, `tb_board_fusion_checked.v`.
+- Fusion engine: `xilinx/rtl/qnn/qnn_engine.v`, configured with NOPS=23, NW=10248, NB=181.
+- Fusion board wrapper: `xilinx/rtl/basys3/basys3_qnn_fusion_top.v`.
+- Checked benches: `xilinx/sim/tb_qnn_fusion_checked.v`, `tb_board_fusion_checked.v`.
 - Frozen export: `experiments/accuracy90_fusion_mlp/export/`.
-- User-run Vivado flow: `vivado -mode batch -source fpga/vivado_fusion90.tcl`.
+- User-run Vivado flow: `vivado -mode batch -source xilinx/fpga/vivado_fusion90.tcl`.
 
 Vivado/MATLAB/Spectre were unavailable during authoring. The supplied Vivado
 flow is NOT TESTED and does not program a board. Generic synthesis and digital
 simulation do not establish timing closure, power, ADC connection or physical
 operation. CWT and auxiliary feature extraction remain on the host.
 
-The retained MATLAB sources and `sim/verify_current_export.m` replay the old
+The retained MATLAB sources and `matlab/sim/verify_current_export.m` replay the old
 CWT-only architecture; they do not constitute an executed MATLAB port of the
 new nonlinear fusion model. Python is the tested current inference path.
-Cadence instructions in `sim/AFE_CADENCE_COSIM.md` refer to the separately
+Cadence instructions in `xilinx/sim/AFE_CADENCE_COSIM.md` refer to the separately
 preserved CWT-only co-simulation. Do not feed those old vectors to the new
 fusion model. AFE gain/noise/bandwidth/overload/CMFB/bandgap checks remain open.
 

@@ -1,6 +1,6 @@
 function c = hw_cfg()
 % HW_CFG  Single source of truth for every constant shared by the MATLAB
-% golden model and the RTL (exported to rtl/gen/params.vh by export_rtl.m).
+% golden model and the RTL (exported to xilinx/rtl/gen/params.vh by export_rtl.m).
 % All sample indices in the golden model are 0-based (like the RTL counters).
 
 c.fs = 360;                       % MIT-BIH sampling rate (Hz)

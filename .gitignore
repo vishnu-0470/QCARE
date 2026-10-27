@@ -13,6 +13,10 @@ __pycache__/
 *.vvp
 *.log
 reports/vivado_xsim/
+experiments/afe_adc_matlab/
+experiments/matlab_stage1/
+experiments/matlab_stage4_export/
+experiments/matlab_beats_dump.txt
 reports/synthesis/**/netlist.json
 reports/synthesis/**/netlist.edif
 

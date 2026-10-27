@@ -1,7 +1,7 @@
 function export_golden(adc, cfg, model, tag, out_dir)
 % EXPORT_GOLDEN  Write the ADC stream and the golden per-beat log used by
-%   sim/tb_accel.v for bit-exact RTL regression.
-if nargin < 5, out_dir = fullfile(fileparts(mfilename('fullpath')), '..', 'sim'); end
+%   xilinx/sim/tb_accel.v for bit-exact RTL regression.
+if nargin < 5, out_dir = fullfile(fileparts(mfilename('fullpath')), '..', 'xilinx', 'sim'); end
 f = fopen(fullfile(out_dir, [tag '_stream.mem']), 'w');
 fprintf(f, '%03x\n', adc(:)); fclose(f);
 [b, raws] = run_stream_golden(adc, cfg, model);

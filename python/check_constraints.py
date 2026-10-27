@@ -1,7 +1,7 @@
 """Check all used Basys3 pin assignments against the reviewed Digilent master."""
 from pathlib import Path
 import json,re
-r=Path(__file__).resolve().parents[1];text=(r/'rtl/basys3/basys3.xdc').read_text()
+r=Path(__file__).resolve().parents[1];text=(r/'xilinx/rtl/basys3/basys3.xdc').read_text()
 expected={'clk':'W5','btnC':'U18','sw[0]':'V17','sw[1]':'V16'}
 expected.update(dict(zip([f'led[{i}]' for i in range(5)],'U16 E19 U19 V19 W18'.split())))
 expected.update(dict(zip([f'seg[{i}]' for i in range(7)],'W7 W6 U8 V8 U5 V5 U7'.split())))

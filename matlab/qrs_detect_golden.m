@@ -1,6 +1,6 @@
 function [ev_c, dbg] = qrs_detect_golden(adc, cfg)
 % QRS_DETECT_GOLDEN  Bit-exact model of the streaming integer QRS detector
-%   (rtl/qrs_detector.v).  adc: integer ADC codes (0..4095).  Returns the
+%   (xilinx/rtl/qrs_detector.v).  adc: integer ADC codes (0..4095).  Returns the
 %   0-based coarse event index c of every detection (position of the
 %   moving-window-integral maximum).  Pipeline per sample n:
 %     s = x[n]-x[n-2];  e = |s|;  m = (sum of last 32 e) >> 5
